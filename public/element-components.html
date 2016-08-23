@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en-US"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en-US"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en-US"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. --> 
+<head>
+  <title>Materiable - Material Design Theme</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <!-- MOBILE STATUS BAR COLOR -->
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#303f9f">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#303f9f">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- FAVICON -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/favicon@2x.png" rel="icon">
+  <link href="img/iphone-favicon.png" rel="apple-touch-icon">
+  <link href="img/iphone-favicon@2x.png" rel="apple-touch-icon" sizes="76x76" />
+  <link href="img/ipad-favicon.png" rel="apple-touch-icon" sizes="120x120" />
+  <link href="img/ipad-favicon@2x.png" rel="apple-touch-icon" sizes="152x152" />
+
+  <!-- MATERIALIZE CSS -->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+  
+  <!-- FONTAWESOME -->
+  <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" media="screen,projection">
+  <!-- MATERIAL ICONS -->
+  <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- SWIPER SLIDER -->
+  <link type="text/css" rel="stylesheet" href="library/swiper/css/swiper.min.css">
+
+  <!-- ANIMATIONS -->
+  <link type="text/css" rel="stylesheet" href="css/animate.css" media="screen,projection">
+  
+  <!-- FOTORAMA CAROUSEL -->
+  <link type="text/css" rel="stylesheet" href="library/fotorama/fotorama.css" media="screen,projection">
+  
+  <!-- FANCYBOX -->
+  <link type="text/css" rel="stylesheet" href="library/fancybox/jquery.fancybox.css" media="screen,projection" />
+  
+  <!-- CUSTOM & SOCIAL BTN STYLE -->
+  <link type="text/css" rel="stylesheet" href="css/social-btn.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/custom.css" media="screen,projection"/>
+
+  <!-- YOUR STYLE -->
+  <link type="text/css" rel="stylesheet" href="#">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!-- Overlay -->
+  <div class="overlay">
+    <div class="col s12 m12 center">
+      <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-pink-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Header -->
+  <header class="indigo inside-header">
+    <!-- Navbar Container -->
+    <div class="navbar-fixed">
+      <!-- nav -->
+      <nav class='indigo darken-2'>
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="index_ori.html" class="brand-logo">Materiable</a>
+            <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="left hide-on-med-and-down">
+              <li><a class="dropdown-button" href="#!" data-activates="home">Home<i class="mdi-hardware-keyboard-arrow-down right"></i></a>
+                <ul id="home" class="dropdown-content">
+                  <li><a href="index_ori.html">Home</a></li>
+                  <li><a href="index-default-slider.html">Default Slider</a></li>
+                  <li><a href="index-navbar-white.html">White Header</a></li>
+                  <li><a href="index-navbar-transparent.html">Transparent Header</a></li>
+                </ul>
+              </li>
+              
+              <li><a class="dropdown-button" href="#!" data-activates="pages">Pages<i class="mdi-hardware-keyboard-arrow-down right"></i></a>
+                <ul id="pages" class="dropdown-content">
+                  <li><a href="about.html">About us</a></li>
+                  <li><a href="about-me.html">About me</a></li>
+                  <li><a href="page-404.html">Error 404</a></li>
+                  <li><a href="page-coming-soon.html">Coming Soon</a></li>
+                  <li><a href="page-faq.html">FAQ</a></li>
+                  <li><a href="footer-style1.html">Footer Style 1</a></li>
+                  <li><a href="footer-style2.html">Footer Style 2</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-button" href="#!" data-activates="blog">Blog<i class="mdi-hardware-keyboard-arrow-down right"></i></a>
+                <ul id="blog" class="dropdown-content">
+                  <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                  <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                  <li><a href="blog-no-sidebar.html">Blog No Sidebar</a></li>
+                  <li><a href="blog-full-width.html">Blog Full Width</a></li>
+                  <li><a href="blog-small-image.html">Blog Small Image</a></li>
+                  <li><a href="blog-with-slider.html">Blog With Slider</a></li>
+                  <li class="divider"></li>
+                  <li><a href="single-post-sidebar.html">Single Post Sidebar</a></li>
+                  <li><a href="single-post-full-width.html">Single Post Full Width</a></li>
+                  <li><a href="single-post-full-image.html">Single Post Full Image</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-button" href="#!" data-activates="portfolio">Portfolio<i class="mdi-hardware-keyboard-arrow-down right"></i></a>
+                <ul id="portfolio" class="dropdown-content">
+                  <li><a href="portfolio-two-col.html">Portfolio Two Col</a></li>
+                  <li><a href="portfolio-three-col.html">Portfolio Three Col</a></li>
+                  <li><a href="portfolio-four-col.html">Portfolio Four Col</a></li>
+                  <li><a href="portfolio-pagination.html">Portfolio Pagination</a></li>
+                  <li><a href="portfolio-masonry.html">Portfolio Masonry</a></li>
+                </ul>
+              </li>
+              <li class="active"><a class="dropdown-button" href="#!" data-activates="elements">Elements<i class="mdi-hardware-keyboard-arrow-down right"></i></a>
+                <ul id="elements" class="dropdown-content">
+                  <li><a href="element-typography.html">Material Typography</a></li>
+                  <li class="active"><a href="element-components.html">Material Components</a></li>
+                  <li><a href="element-forms.html">Material Forms</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-button" href="#!" data-activates="contacts">Contact<i class="mdi-hardware-keyboard-arrow-down right"></i></a>
+                <ul id="contacts" class="dropdown-content">
+                  <li><a href="contact.html">Contact 1</a></li>
+                  <li><a href="contact-2.html">Contact 2</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- Small Screen Side Nav -->
+            <ul id="mobile-nav" class="side-nav">
+              <li><a href="index_ori.html">Home</a></li>
+              <li><a href="index-default-slider.html">Default Slider</a></li>
+              <li><a href="index-navbar-white.html">White Header</a></li>
+              <li><a href="index-navbar-transparent.html">Transparent Header</a></li>
+              <li class="divider"></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="about-me.html">About me</a></li>
+              <li><a href="page-404.html">Error 404</a></li>
+              <li><a href="page-coming-soon.html">Coming Soon</a></li>
+              <li><a href="page-faq.html">FAQ</a></li>
+              <li><a href="footer-style1.html">Footer Style 1</a></li>
+              <li><a href="footer-style2.html">Footer Style 2</a></li>
+              <li class="divider"></li>
+              <li><a  href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+              <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+              <li><a href="blog-no-sidebar.html">Blog No Sidebar</a></li>
+              <li><a href="blog-full-width.html">Blog Full Width</a></li>
+              <li><a href="blog-small-image.html">Blog Small Image</a></li>
+              <li><a href="blog-with-slider.html">Blog With Slider</a></li>
+              <li class="divider"></li>
+              <li><a href="single-post-sidebar.html">Single Post Sidebar</a></li>
+              <li><a href="single-post-full-width.html">Single Post Full Width</a></li>
+              <li><a href="single-post-full-image.html">Single Post Full Image</a></li>
+              <li class="divider"></li>
+              <li><a href="portfolio-two-col.html">Portfolio Two Col</a></li>
+              <li><a href="portfolio-three-col.html">Portfolio Three Col</a></li>
+              <li><a href="portfolio-four-col.html">Portfolio Four Col</a></li>
+              <li><a href="portfolio-pagination.html">Portfolio Pagination</a></li>
+              <li><a href="portfolio-masonry.html">Portfolio Masonry</a></li>
+              <li class="divider"></li>
+              <li><a href="element-typography.html">Material Typography</a></li>
+              <li><a class="active" href="element-components.html">Material Components</a></li>
+              <li><a href="element-forms.html">Material Forms</a></li>
+              <li class="divider"></li>
+              <li><a href="contact.html">Contact 1</a></li>
+              <li><a href="contact-2.html">Contact 2</a></li>
+            </ul>
+            <!--/ Small Screen Side Nav -->
+          </div>
+          <form class="hide-on-med-and-down">
+            <div class="input-field">
+              <input id="search" type="search" required>
+              <label for="search" class="search-label"><i class="material-icons">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </div>
+      </nav>
+      <!--/ nav -->
+    </div>
+    <!--/ Navbar Container -->
+  </header>        
+  <!--/ Header -->
+
+  <!-- Element Page -->
+  <div class="section element-page">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m12">
+          <!-- Page Container -->          
+          <div class="page-container">
+            <div class="row">
+              <div class="col s12 m12">
+                <!-- Flat Buttons -->
+                <div class="row">
+                  <div class="col m12"><h4 class="blue-text">Raised flat buttons</h4></div>
+                  <div class="col s4 m2"><a class="waves-effect waves-light btn indigo">button</a></div>
+                  <div class="col s4 m2"><a class="waves-effect waves-light btn blue">button</a></div>
+                  <div class="col s4 m2"><a class="waves-effect waves-light btn red">button</a></div>
+                  <div class="col s4 m2"><a class="waves-effect waves-light btn green">button</a></div>
+                  <div class="col s4 m2"><a class="waves-effect waves-light btn orange">button</a></div>
+                  <div class="col s4 m2"><a class="waves-effect waves-light btn grey">button</a></div>
+                </div>
+                <div class="row">
+                  <div class="col s4 m2"><a class="btn waves-effect grey lighten-5 indigo-text">button</a></div>
+                  <div class="col s4 m2"><a class="btn waves-effect grey lighten-5 blue-text">button</a></div>
+                  <div class="col s4 m2"><a class="btn waves-effect grey lighten-5 red-text">button</a></div>
+                  <div class="col s4 m2"><a class="btn waves-effect grey lighten-5 green-text">button</a></div>
+                  <div class="col s4 m2"><a class="btn waves-effect grey lighten-5 orange-text">button</a></div>
+                  <div class="col s4 m2"><a class="btn waves-effect grey lighten-5 grey-text">button</a></div>
+                </div>
+                <div class="row">
+                  <div class="col s4 m2"><a class="waves-effect waves-indigo btn-flat indigo-text">button</a></div>
+                  <div class="col s4 m2"><a class="waves-effect waves-blue btn-flat blue-text">button</a></div>
+                  <div class="col s4 m2"><a class="waves-effect waves-red btn-flat red-text">button</a></div>
+                  <div class="col s4 m2"><a class="waves-effect waves-green btn-flat green-text">button</a></div>
+                  <div class="col s4 m2"><a class="waves-effect waves-orange btn-flat orange-text">button</a></div>
+                  <div class="col s4 m2"><a class="waves-effect waves-grey btn-flat grey-text">button</a></div>
+                </div><br/>
+                <!--/ Flat Buttons -->
+
+                <!-- Floating Buttons -->
+                <div class="row">
+                  <div class="col m12"><h4 class="blue-text">Floating Buttons</h4></div>
+                  <div class="col s4 m2"><a class="btn-floating btn-large waves-effect waves-light indigo"><i class="mdi-content-add"></i></a></div>
+                  <div class="col s4 m2"><a class="btn-floating btn-large waves-effect waves-light blue"><i class="mdi-content-add"></i></a></div>
+                  <div class="col s4 m2"><a class="btn-floating btn-large waves-effect waves-light red"><i class="mdi-content-add"></i></a></div>
+                  <div class="col s4 m2"><a class="btn-floating btn-large waves-effect waves-light green"><i class="mdi-content-add"></i></a></div>
+                  <div class="col s4 m2"><a class="btn-floating btn-large waves-effect waves-light orange"><i class="mdi-content-add"></i></a></div>
+                  <div class="col s4 m2"><a class="btn-floating btn-large waves-effect waves-light grey"><i class="mdi-content-add"></i></a></div>
+                </div><br/>
+                <!--/ Floating Buttons -->
+
+                <!-- Social Icons -->
+                <div class="row">
+                  <div class="col m12"><h4 class="blue-text">Social Icons</h4></div>
+                  <div class="col m12 follow-btn">
+                    <a href="#" title=""><i class="fa fa-facebook"></i></a>
+                    <a href="#" title=""><i class="fa fa-twitter"></i></a>
+                    <a href="#" title=""><i class="fa fa-linkedin"></i></a>
+                    <a href="#" title=""><i class="fa fa-dribbble"></i></a>
+                    <a href="#" title=""><i class="fa fa-behance"></i></a>
+                    <a href="#" title=""><i class="fa fa-instagram"></i></a>
+                    <a href="#" title=""><i class="fa fa-google-plus"></i></a>
+                    <a href="#" title=""><i class="fa fa-youtube"></i></a>
+                    <a href="#" title=""><i class="fa fa-rss"></i></a>
+                  </div>
+                </div><br/>
+                <!--/ Social Icons -->
+
+                <!-- Material Shadow -->
+                <div class="row">
+                  <div class="col m12"><h4 class="blue-text">Material Shadow</h4></div>
+                  <p class="col m12">
+                    In material design, everything should have a certain z-depth that determines how far raised or close to the page the element is.
+                  </p>
+                  <p class="col m12">
+                    You can easily apply this shadow effect by adding a class="z-depth-2" to an HTML tag. Alternatively you can extend any of these shadows with Sass using @extend .z-depth-2 A z-depth-0 can be used to remove shadows from elements that have z-depths by default. 
+                  </p>
+                  <div class="col s12 m2">
+                    <p class="z-depth-1 blue white-text center-align shadow-demo">z-depth-1</p>
+                  </div>
+                  <div class="col s12 m2">
+                    <p class="z-depth-2 blue white-text center-align shadow-demo">z-depth-2</p>
+                  </div>
+                  <div class="col s12 m2">
+                    <p class="z-depth-3 blue white-text center-align shadow-demo">z-depth-3</p>
+                  </div>
+                  <div class="col s12 m2">
+                    <p class="z-depth-4 blue white-text center-align shadow-demo">z-depth-4</p>
+                  </div>
+                  <div class="col s12 m2">
+                    <p class="z-depth-5 blue white-text center-align shadow-demo">z-depth-5</p>
+                  </div>
+                </div>
+                <!--/ Material Shadow -->
+
+                <!-- Chips -->
+                <div class="row">
+                  <div class="col m12">
+                    <h4 class="blue-text">Chips</h4>
+                    <p>
+                      Chips can be used to represent small blocks of information. They are most commonly used either for contacts or for tags. 
+                    </p>
+
+                    <h6>Contacts</h6>
+                    <p>Create a contact chip just add an img inside.</p>
+                    <div class="chip"><img src="img/author01.jpg" alt="Contact Person">Jane Doe</div>
+                    <br><br>
+
+                    <h6>Tags</h6>
+                    <p>Create a tag chip just add an close icon inside. </p>
+                    <div class="chip">Tag<i class="material-icons">close</i></div>
+                  </div>
+                </div><br/>
+                <!--/ Chips -->
+
+                <!-- Preloader -->
+                <div class="row">
+                  <div class="col m12">
+                    <h4 class="blue-text">Preloader</h4>
+                    <h6>Linear</h6>
+                    <div class="progress blue lighten-3">
+                      <div class="determinate blue" style="width: 70%"></div>
+                    </div>  
+
+                    <h6>Indeterminate</h6>
+                    <div class="progress blue lighten-3">
+                      <div class="indeterminate blue"></div>
+                    </div><br>
+
+                    <h6>Circular</h6><br>
+                    <div class="row">
+                      <div class="col s12 m3 center">
+                        <div class="preloader-wrapper big active">
+                          <div class="spinner-layer spinner-blue-only">
+                            <div class="circle-clipper left">
+                              <div class="circle"></div>
+                            </div><div class="gap-patch">
+                              <div class="circle"></div>
+                            </div><div class="circle-clipper right">
+                              <div class="circle"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col s12 m3 center">
+                        <div class="preloader-wrapper active">
+                          <div class="spinner-layer spinner-red-only">
+                            <div class="circle-clipper left">
+                              <div class="circle"></div>
+                            </div><div class="gap-patch">
+                              <div class="circle"></div>
+                            </div><div class="circle-clipper right">
+                              <div class="circle"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col s12 m3 center">
+                        <div class="preloader-wrapper small active">
+                          <div class="spinner-layer spinner-green-only">
+                            <div class="circle-clipper left">
+                              <div class="circle"></div>
+                            </div><div class="gap-patch">
+                              <div class="circle"></div>
+                            </div><div class="circle-clipper right">
+                              <div class="circle"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--/ Preloader -->
+
+                <!-- Collapsible -->
+                <div class="row">
+                  <div class="col m12">
+                    <h4 class="blue-text">Collapsible</h4>
+                    <p>
+                      Collapsibles are accordion elements that expand when clicked on. They allow you to hide content that is not immediately relevant to the user. 
+                    </p>
+                    <div class="row">
+                      <div class="col m6">
+                        <h6>Normal Collapsible</h6>
+                        <ul class="collapsible" data-collapsible="accordion">
+                          <li>
+                            <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                          </li>
+                          <li>
+                            <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                          </li>
+                          <li>
+                            <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col m6">
+                        <h6>Popout Collapsible</h6>
+                        <ul class="collapsible popout" data-collapsible="accordion">
+                          <li>
+                            <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                          </li>
+                          <li>
+                            <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                          </li>
+                          <li>
+                            <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--/ Collapsible -->
+
+                <!-- Dialogs -->
+                <div class="row">
+                  <div class="col m12">
+                    <h4 class="blue-text">Dialogs</h4>
+                    <a class="btn waves-effect waves-light blue" onclick="Materialize.toast('I &#10084; Material', 4000)">Normal</a><br><br>
+                    <a class="btn waves-effect waves-light blue" onclick="Materialize.toast('I &#10084; Material', 4000, 'rounded') ">Rounded</a>
+                  </div>
+                </div>
+                <!--/ Dialogs -->
+
+                <!-- Modal -->
+                <div class="row">
+                  <div class="col m12">
+                    <h4 class="blue-text">Modals</h4>
+                    <p>
+                      Use a modal for dialog boxes, confirmation messages, or other content that can be called up. In order for the modal to work you have to add the Modal ID to the link of the trigger. To add a close button, just add the class .modal-close to your button.
+                    </p>
+                    <!-- Modal Trigger -->
+                    <a class="btn waves-effect waves-light blue modal-trigger" href="#modal1">Modal</a>
+                    <a class="btn waves-effect waves-light blue modal-trigger" href="#modal2">Modal With Fixed Footer</a>
+                    <a class="btn waves-effect waves-light blue modal-trigger" href="#modal3">Modal Bottom Sheet Style</a>
+
+                    <!-- Modal Structure -->
+                    <div id="modal1" class="modal">
+                      <div class="modal-content">
+                        <h4>Modal Header</h4>
+                        <p>A bunch of text</p>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="#!" class=" modal-action modal-close waves-effect waves-blue btn-flat">Agree</a>
+                      </div>
+                    </div>
+                    <br>
+                   
+                    <!-- Modal Structure - Modal With Fixed Footer -->
+                    <div id="modal2" class="modal modal-fixed-footer">
+                      <div class="modal-content">
+                        <h4>Modal Header</h4>
+                        <p>A bunch of text</p>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+                      </div>
+                    </div>
+                    
+                    <!-- Modal Structure - Bottom Sheet Modals -->
+                    <div class="modal bottom-sheet" id="modal3">
+                      <div class="modal-content">
+                        <h4>Modal Header</h4>
+                        <ul class="collection">
+                          <li class="collection-item avatar">
+                            <img class="circle" alt="" src="img/author01.jpg">
+                            <span class="title">Title</span>
+                            <p>First Line <br>
+                               Second Line
+                            </p>
+                            <a class="secondary-content" href="#!"><i class="material-icons">grade</i></a>
+                          </li>
+                          <li class="collection-item avatar">
+                            <i class="material-icons circle">folder</i>
+                            <span class="title">Title</span>
+                            <p>First Line <br>
+                               Second Line
+                            </p>
+                            <a class="secondary-content" href="#!"><i class="material-icons">grade</i></a>
+                          </li>
+                          <li class="collection-item avatar">
+                            <i class="material-icons circle green">assessment</i>
+                            <span class="title">Title</span>
+                            <p>First Line <br>
+                               Second Line
+                            </p>
+                            <a class="secondary-content" href="#!"><i class="material-icons">grade</i></a>
+                          </li>
+                          <li class="collection-item avatar">
+                            <i class="material-icons circle red">play_arrow</i>
+                            <span class="title">Title</span>
+                            <p>First Line <br>
+                               Second Line
+                            </p>
+                            <a class="secondary-content" href="#!"><i class="material-icons">grade</i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>   
+                            
+                  </div>
+                </div>
+                <!--/ Modal -->
+
+                <!-- Tabs -->
+                <div class="row">
+                  <div class="col m12">
+                    <h4 class="blue-text">Tabs</h4>
+                    <p>
+                      The tabs structure consists of an unordered list of tabs that have hashes corresponding to tab ids. Then when you click on each tab, only the container with the corresponding tab id will become visible. You can add the class .disabled to make a tab inaccessible. 
+                    </p>
+                    <div class="row">
+                      <div class="col s12">
+                        <ul class="tabs">
+                          <li class="tab col s3"><a href="#test1">Test 1</a></li>
+                          <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
+                          <li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li>
+                        </ul>
+                      </div>
+                      <div id="test1" class="col s12">Test 1</div>
+                      <div id="test2" class="col s12">Test 2</div>
+                      <div id="test3" class="col s12">Test 3</div>
+                    </div>
+                  </div>
+                </div>
+                <!--/ Tabs -->
+              </div>
+            </div>
+          </div>
+          <!--/ Page Container -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Element Page -->
+
+  <!-- Floating btn -->
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large pink accent-2">
+      <i class="mdi-content-add"></i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="large mdi-editor-insert-chart"></i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="large mdi-editor-format-quote"></i></a></li>
+      <li><a class="btn-floating green"><i class="large mdi-editor-publish"></i></a></li>
+      <li><a class="btn-floating blue"><i class="large mdi-editor-attach-file"></i></a></li>
+    </ul>
+  </div>
+  <!--/ Floating btn -->
+
+  <!-- Footer -->
+  <footer class="page-footer indigo">
+    <div class="footer-copyright indigo">
+      <div class="container center">
+        © Copyright - MATERIABLE Blog Demo - powered by <a href="http://themeforest.net/user/toriom" target="_blank">TORIOM</a> Theme 
+      </div>
+    </div>
+  </footer>
+  <!--/ Footer -->
+
+  <!-- Jquery Lib -->
+  <script src="js/jquery-2.2.1.min.js"></script>
+
+  <!-- Jquery Easing -->
+  <script src="js/jquery.easing.1.3.js"></script>
+
+  <!-- Jquery Appear -->
+  <script src="js/jquery.appear.js"></script>
+
+  <!-- Materialize Lib -->
+  <script src="js/materialize.js"></script>
+  
+  <!-- Fotorama -->
+  <script src="library/fotorama/fotorama.js"></script>
+
+  <!-- Swiper Slider -->
+  <script src="library/swiper/js/swiper.min.js"></script>
+  <script src="library/swiper/js/swiper.jquery.min.js"></script>
+  
+  <!-- Fancybox -->
+  <script src="library/fancybox/jquery.fancybox.js"></script>
+
+  <!-- Lazyload -->
+  <script src="js/jquery.lazyload.js"></script>
+
+  <!-- WOW -->
+  <script src="js/wow.min.js"></script>
+
+  <!-- Counter --> 
+  <script src="js/jquery.countTo.js"></script>
+
+  <!-- Countdown -->
+  <script src="js/jquery.countdown.min.js"></script>
+
+  <!-- Masonry Lib -->
+  <script src="js/isotope.pkgd.min.js"></script>
+  
+  <!-- Images Loaded -->
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+
+  <!-- Pie Chart -->
+  <script src="js/jquery.easypiechart.min.js"></script>
+
+  <!-- Google Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+  <script src="js/map.initialize.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="js/custom.js"></script>
+  </body>
+</html>

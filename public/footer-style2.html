@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en-US"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en-US"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en-US"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. --> 
+<head>
+  <title>Materiable - Material Design Theme</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <!-- MOBILE STATUS BAR COLOR -->
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#303f9f">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#303f9f">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- FAVICON -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/favicon@2x.png" rel="icon">
+  <link href="img/iphone-favicon.png" rel="apple-touch-icon">
+  <link href="img/iphone-favicon@2x.png" rel="apple-touch-icon" sizes="76x76" />
+  <link href="img/ipad-favicon.png" rel="apple-touch-icon" sizes="120x120" />
+  <link href="img/ipad-favicon@2x.png" rel="apple-touch-icon" sizes="152x152" />
+
+  <!-- MATERIALIZE CSS -->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+  
+  <!-- FONTAWESOME -->
+  <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" media="screen,projection">
+  <!-- MATERIAL ICONS -->
+  <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- SWIPER SLIDER -->
+  <link type="text/css" rel="stylesheet" href="library/swiper/css/swiper.min.css">
+
+  <!-- ANIMATIONS -->
+  <link type="text/css" rel="stylesheet" href="css/animate.css" media="screen,projection">
+  
+  <!-- FOTORAMA CAROUSEL -->
+  <link type="text/css" rel="stylesheet" href="library/fotorama/fotorama.css" media="screen,projection">
+  
+  <!-- FANCYBOX -->
+  <link type="text/css" rel="stylesheet" href="library/fancybox/jquery.fancybox.css" media="screen,projection" />
+  
+  <!-- CUSTOM & SOCIAL BTN STYLE -->
+  <link type="text/css" rel="stylesheet" href="css/social-btn.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/custom.css" media="screen,projection"/>
+
+  <!-- YOUR STYLE -->
+  <link type="text/css" rel="stylesheet" href="#">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!-- Overlay -->
+  <div class="overlay">
+    <div class="col s12 m12 center">
+      <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-pink-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Header -->
+  <header class="indigo inside-header">
+    <!-- Navbar Container -->
+    <div class="navbar-fixed">
+      <!-- nav -->
+      <nav class='indigo darken-2'>
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="index_ori.html" class="brand-logo">Materiable</a>
+            <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="left hide-on-med-and-down">
+              <li><a class="dropdown-button" href="#!" data-activates="home">Home<i class="mdi-hardware-keyboard-arrow-down right"></i></a>
+                <ul id="home" class="dropdown-content">
+                  <li><a href="index_ori.html">Home</a></li>
+                  <li><a href="index-default-slider.html">Default Slider</a></li>
+                  <li><a href="index-navbar-white.html">White Header</a></li>
+                  <li><a href="index-navbar-transparent.html">Transparent Header</a></li>
+                </ul>
+              </li>
+              
+              <li class="active"><a class="dropdown-button" href="#!" data-activates="pages">Pages<i class="mdi-hardware-keyboard-arrow-down right"></i></a>
+                <ul id="pages" class="dropdown-content">
+                  <li><a href="about.html">About us</a></li>
+                  <li><a href="about-me.html">About me</a></li>
+                  <li><a href="page-404.html">Error 404</a></li>
+                  <li><a href="page-coming-soon.html">Coming Soon</a></li>
+                  <li><a href="page-faq.html">FAQ</a></li>
+                  <li><a href="footer-style1.html">Footer Style 1</a></li>
+                  <li class="active"><a href="footer-style2.html">Footer Style 2</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-button" href="#!" data-activates="blog">Blog<i class="mdi-hardware-keyboard-arrow-down right"></i></a>
+                <ul id="blog" class="dropdown-content">
+                  <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                  <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                  <li><a href="blog-no-sidebar.html">Blog No Sidebar</a></li>
+                  <li><a href="blog-full-width.html">Blog Full Width</a></li>
+                  <li><a href="blog-small-image.html">Blog Small Image</a></li>
+                  <li><a href="blog-with-slider.html">Blog With Slider</a></li>
+                  <li class="divider"></li>
+                  <li><a href="single-post-sidebar.html">Single Post Sidebar</a></li>
+                  <li><a href="single-post-full-width.html">Single Post Full Width</a></li>
+                  <li><a href="single-post-full-image.html">Single Post Full Image</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-button" href="#!" data-activates="portfolio">Portfolio<i class="mdi-hardware-keyboard-arrow-down right"></i></a>
+                <ul id="portfolio" class="dropdown-content">
+                  <li><a href="portfolio-two-col.html">Portfolio Two Col</a></li>
+                  <li><a href="portfolio-three-col.html">Portfolio Three Col</a></li>
+                  <li><a href="portfolio-four-col.html">Portfolio Four Col</a></li>
+                  <li><a href="portfolio-pagination.html">Portfolio Pagination</a></li>
+                  <li><a href="portfolio-masonry.html">Portfolio Masonry</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-button" href="#!" data-activates="elements">Elements<i class="mdi-hardware-keyboard-arrow-down right"></i></a>
+                <ul id="elements" class="dropdown-content">
+                  <li><a href="element-typography.html">Material Typography</a></li>
+                  <li><a href="element-components.html">Material Components</a></li>
+                  <li><a href="element-forms.html">Material Forms</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-button" href="#!" data-activates="contacts">Contact<i class="mdi-hardware-keyboard-arrow-down right"></i></a>
+                <ul id="contacts" class="dropdown-content">
+                  <li><a href="contact.html">Contact 1</a></li>
+                  <li><a href="contact-2.html">Contact 2</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- Small Screen Side Nav -->
+            <ul id="mobile-nav" class="side-nav">
+              <li><a href="index_ori.html">Home</a></li>
+              <li><a href="index-default-slider.html">Default Slider</a></li>
+              <li><a href="index-navbar-white.html">White Header</a></li>
+              <li><a href="index-navbar-transparent.html">Transparent Header</a></li>
+              <li class="divider"></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="about-me.html">About me</a></li>
+              <li><a href="page-404.html">Error 404</a></li>
+              <li><a href="page-coming-soon.html">Coming Soon</a></li>
+              <li><a href="page-faq.html">FAQ</a></li>
+              <li><a href="footer-style1.html">Footer Style 1</a></li>
+              <li><a class="active" href="footer-style2.html">Footer Style 2</a></li>
+              <li class="divider"></li>
+              <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+              <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+              <li><a href="blog-no-sidebar.html">Blog No Sidebar</a></li>
+              <li><a href="blog-full-width.html">Blog Full Width</a></li>
+              <li><a href="blog-small-image.html">Blog Small Image</a></li>
+              <li><a href="blog-with-slider.html">Blog With Slider</a></li>
+              <li class="divider"></li>
+              <li><a href="single-post-sidebar.html">Single Post Sidebar</a></li>
+              <li><a href="single-post-full-width.html">Single Post Full Width</a></li>
+              <li><a href="single-post-full-image.html">Single Post Full Image</a></li>
+              <li class="divider"></li>
+              <li><a href="portfolio-two-col.html">Portfolio Two Col</a></li>
+              <li><a href="portfolio-three-col.html">Portfolio Three Col</a></li>
+              <li><a href="portfolio-four-col.html">Portfolio Four Col</a></li>
+              <li><a href="portfolio-pagination.html">Portfolio Pagination</a></li>
+              <li><a href="portfolio-masonry.html">Portfolio Masonry</a></li>
+              <li class="divider"></li>
+              <li><a href="element-typography.html">Material Typography</a></li>
+              <li><a href="element-components.html">Material Components</a></li>
+              <li><a href="element-forms.html">Material Forms</a></li>
+              <li class="divider"></li>
+              <li><a href="contact.html">Contact 1</a></li>
+              <li><a href="contact-2.html">Contact 2</a></li>
+            </ul>
+            <!--/ Small Screen Side Nav -->
+          </div>
+          <form class="hide-on-med-and-down">
+            <div class="input-field">
+              <input id="search" type="search" required>
+              <label for="search" class="search-label"><i class="material-icons">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </div>
+      </nav>
+      <!--/ nav -->
+    </div>
+    <!--/ Navbar Container -->
+  </header>        
+  <!--/ Header -->
+
+  <!-- Footer Style Container -->
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m12">
+          <!-- Page Container -->          
+          <div class="page-container">
+            <div class="row">
+              <div class="col s12 m12">
+                <h4 class="blue-text">Footer style 2</h4>
+                <div class="row">
+                  <div class="col s12">
+                    <h5>Pellentesque habitant morbi</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla tortor in ullamcorper ultricies. Morbi  
+                      lacinia augue arcu,
+                      eu cursus nibh ornare vel. Quisque ac nisi congue, sagittis neque nec, eleifend lorem. Integer id neque ultrices orci vehicula
+                      volutpat. Morbi vel risus ullamcorper, vehicula massa eget, rhoncus velit. Duis risus nibh, rhoncus at placerat non, vulputate nec
+                      massa. Pellentesque malesuada orci et ultrices venenat urna vitae, dictum arcu.</p>
+                    <p>Etiam placerat sit amet tellus gravida mattis. Etiam eget eros nec sapien consequat semper. Quisque ut ligula  
+                      sapien. Nulla in
+                      feugiat ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus luctus nec enim
+                      ac varius. Ut sagittis quis leo eu pellentesque. Vivamus at metus congue, interdum velit at, posuere eros. Duis vehicula leo nunc, ac
+                      accums venenat urna vitae, dictum arcu nisl pretium pretium.</p>
+                  </div><!-- col -->
+                </div>
+                <div class="row">
+                  <div class="col s6">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>Pellentesque ut nunc pharetra, venenat urna vitae, dictum arcu. Sed accums enim tincidunt tortor ullamcorper 
+                      cursus.
+                      Vestibulum cursus fringilla ex, non aliquam arcu ullamcorper at. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                      Vestibulum sem felis, imperdiet at scelerisque a, efficitur ut est. Pellentesque habitant morbi tristique senectus et netus et
+                      malesuada fames ac turpis.
+                    </p>
+                  </div><!-- col -->
+                  <div class="col s6">
+                    <h5>Etiam sed enim et velit cursus</h5>
+                    <p>Pellentesque ut nunc pharetra, venenat urna vitae, dictum arcu. Sed accums enim tincidunt tortor ullamcorper 
+                      cursus.
+                      Vestibulum cursus fringilla ex, non aliquam arcu ullamcorper at. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                      Vestibulum sem felis, imperdiet at scelerisque a, efficitur ut est. Pellentesque habitant morbi tristique senectus et netus et
+                      malesuada fames ac turpis.
+                    </p>
+                  </div><!-- col -->
+                </div>
+                <div class="row">
+                  <div class="col s7 m7">
+                    <h5>Morbi vel risus</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla tortor in ullamcorper ultricies. Morbi  
+                      lacinia augue arcu, eu cursus nibh ornare vel. Quisque ac nisi congue, sagittis neque nec, eleifend lorem. Integer id neque ultrices orci vehicula
+                      volutpat. Morbi vel risus ullamcorper, vehicula massa eget, rhoncus velit. Duis risus nibh.
+                    </p>
+                  </div><!-- col -->
+                  <div class="col s5 m5">
+                    <h5>Morbi vel risus</h5>
+                    <p>Phasellus neque dui, cursus vitae dignissim nec, efficitur in erat. Fusce sit amet commodo velit. Nunc eleifend, 
+                      enim vel bibendum
+                      auctor, purus lacus pellentesque enim, in rutrum neque turpis at neque dolor amet. Pellentesque malesuada orci et.
+                    </p>
+                  </div><!-- col -->
+                </div>
+                <div class="row">
+                  <div class="col s4 m4">
+                    <h5>Etiam vehicula</h5>
+                    <p>Integer ac orci sapien. Nunc volutpat lacus lacus, eu fringilla elit faucibus sit amet. Etiam vehicula et enim nec 
+                      lobortis. Etiam porta, lectus sed consequat ullamcorper sem mi.
+                    </p>
+                  </div><!-- col -->
+                  <div class="col s4 m4">
+                    <h5>Praesent tincidunt</h5>
+                    <p>Donec egestas sollicitudin lacinia. Praesent tincidunt, turpis id feugiat aliquet, eros mauris blandit lorem, semper 
+                      aliquet enim nunc ut mauris. Donec sollicitudin volutpat nulla amet. 
+                    </p>
+                  </div><!-- col -->
+                  <div class="col s4 m4">
+                    <h5>Duis tempus amet</h5>
+                    <p>Nunc elementum iaculis lorem sed gravida. Duis tempus mauris vitae orci faucibus bibendum. Aliquam posuere nisi  
+                      eros, eu semper velit varius sed. Fusce id massa lobortis. 
+                    </p>
+                  </div><!-- col -->
+                </div>
+                <div class="row">
+                  <div class="col s3 m3">
+                    <h5>ac orci sapien</h5>
+                    <p>Integer ac orci sapien. Nunc volutpat lacus lacus, eu fringilla elit faucibus sit amet. Etiam vehicula et enim nec 
+                      lobortis. Etiam porta, lectus sed consequat ullamcorper sem mi.
+                    </p>
+                  </div><!-- col -->
+                  <div class="col s3 m3">
+                    <h5>Donec egestas</h5>
+                    <p>Donec egestas sollicitudin lacinia. Praesent tincidunt, turpis id feugiat aliquet, eros mauris blandit lorem, semper 
+                      aliquet enim nunc ut mauris. Donec sollicitudin volutpat nulla amet. 
+                    </p>
+                  </div><!-- col -->
+                  <div class="col s3 m3">
+                    <h5>elementum iaculis</h5>
+                    <p>Nunc elementum iaculis lorem sed gravida. Duis tempus mauris vitae orci faucibus bibendum. Aliquam posuere nisi  
+                      eros, eu semper velit varius sed. Fusce id massa lobortis. 
+                    </p>
+                  </div><!-- col -->
+                  <div class="col s3 m3">
+                    <h5>Fusce id massa lobortis</h5>
+                    <p>Nunc elementum iaculis lorem sed gravida. Duis tempus mauris vitae orci faucibus bibendum. Aliquam posuere nisi  
+                      eros, eu semper velit varius sed. Fusce id massa lobortis. 
+                    </p>
+                  </div><!-- col -->
+                </div>
+                <div class="row">
+                  <div class="col s2 m2">
+                    <h5>Ac orci sapien</h5>
+                    <p>Integer ac orci sapien. Nunc volutpat lacus lacus, eu fringilla elit faucibus sit amet.
+                    </p>
+                  </div><!-- col -->
+                  <div class="col s2 m2">
+                    <h5>Ac orci sapien</h5>
+                    <p>Integer ac orci sapien. Nunc volutpat lacus lacus, eu fringilla elit faucibus sit amet.
+                    </p>
+                  </div><!-- col -->
+                  <div class="col s2 m2">
+                    <h5>Ac orci sapien</h5>
+                    <p>Integer ac orci sapien. Nunc volutpat lacus lacus, eu fringilla elit faucibus sit amet.
+                    </p>
+                  </div><!-- col -->
+                  <div class="col s2 m2">
+                    <h5>Ac orci sapien</h5>
+                    <p>Integer ac orci sapien. Nunc volutpat lacus lacus, eu fringilla elit faucibus sit amet.
+                    </p>
+                  </div><!-- col -->
+                  <div class="col s2 m2">
+                    <h5>Ac orci sapien</h5>
+                    <p>Integer ac orci sapien. Nunc volutpat lacus lacus, eu fringilla elit faucibus sit amet.
+                    </p>
+                  </div><!-- col -->
+                  <div class="col s2 m2">
+                    <h5>Ac orci sapien</h5>
+                    <p>Integer ac orci sapien. Nunc volutpat lacus lacus, eu fringilla elit faucibus sit amet.
+                    </p>
+                  </div><!-- col -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/ Page Container -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Footer Style Container -->
+
+  <!-- Floating btn -->
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large pink accent-2">
+      <i class="mdi-content-add"></i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="large mdi-editor-insert-chart"></i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="large mdi-editor-format-quote"></i></a></li>
+      <li><a class="btn-floating green"><i class="large mdi-editor-publish"></i></a></li>
+      <li><a class="btn-floating blue"><i class="large mdi-editor-attach-file"></i></a></li>
+    </ul>
+  </div>
+  <!--/ Floating btn -->
+
+  <!-- Footer -->
+  <footer class="page-footer z-depth-1 grey darken-3">
+    <div class="container">
+      <div class="row center">
+        <h3 class="center">meet your new materiable theme</h3>
+        <a class="waves-effect waves-light btn pink accent-2" href="#!">Buy theme</a>
+      </div>
+    </div>
+    <div class="footer-copyright z-depth-1 grey darken-4">
+      <div class="container center">
+        © Copyright - MATERIABLE Blog Demo - powered by <a href="http://themeforest.net/user/Toriom" target="_blank">TORIOM</a> Theme 
+      </div>
+    </div>
+  </footer>
+  <!--/ Footer -->
+
+  <!-- Jquery Lib -->
+  <script src="js/jquery-2.2.1.min.js"></script>
+
+  <!-- Jquery Easing -->
+  <script src="js/jquery.easing.1.3.js"></script>
+
+  <!-- Jquery Appear -->
+  <script src="js/jquery.appear.js"></script>
+
+  <!-- Materialize Lib -->
+  <script src="js/materialize.js"></script>
+  
+  <!-- Fotorama -->
+  <script src="library/fotorama/fotorama.js"></script>
+
+  <!-- Swiper Slider -->
+  <script src="library/swiper/js/swiper.min.js"></script>
+  <script src="library/swiper/js/swiper.jquery.min.js"></script>
+  
+  <!-- Fancybox -->
+  <script src="library/fancybox/jquery.fancybox.js"></script>
+
+  <!-- Lazyload -->
+  <script src="js/jquery.lazyload.js"></script>
+
+  <!-- WOW -->
+  <script src="js/wow.min.js"></script>
+
+  <!-- Counter --> 
+  <script src="js/jquery.countTo.js"></script>
+
+  <!-- Countdown -->
+  <script src="js/jquery.countdown.min.js"></script>
+
+  <!-- Masonry Lib -->
+  <script src="js/isotope.pkgd.min.js"></script>
+  
+  <!-- Images Loaded -->
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+
+  <!-- Pie Chart -->
+  <script src="js/jquery.easypiechart.min.js"></script>
+  
+  <!-- Google Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+  <script src="js/map.initialize.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/custom.js"></script>
+  </body>
+</html>

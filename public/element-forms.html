@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en-US"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en-US"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en-US"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. --> 
+<head>
+  <title>Materiable - Material Design Theme</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <!-- MOBILE STATUS BAR COLOR -->
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#303f9f">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#303f9f">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- FAVICON -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/favicon@2x.png" rel="icon">
+  <link href="img/iphone-favicon.png" rel="apple-touch-icon">
+  <link href="img/iphone-favicon@2x.png" rel="apple-touch-icon" sizes="76x76" />
+  <link href="img/ipad-favicon.png" rel="apple-touch-icon" sizes="120x120" />
+  <link href="img/ipad-favicon@2x.png" rel="apple-touch-icon" sizes="152x152" />
+
+  <!-- MATERIALIZE CSS -->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+  
+  <!-- FONTAWESOME -->
+  <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" media="screen,projection">
+  <!-- MATERIAL ICONS -->
+  <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- SWIPER SLIDER -->
+  <link type="text/css" rel="stylesheet" href="library/swiper/css/swiper.min.css">
+
+  <!-- ANIMATIONS -->
+  <link type="text/css" rel="stylesheet" href="css/animate.css" media="screen,projection">
+  
+  <!-- FOTORAMA CAROUSEL -->
+  <link type="text/css" rel="stylesheet" href="library/fotorama/fotorama.css" media="screen,projection">
+  
+  <!-- FANCYBOX -->
+  <link type="text/css" rel="stylesheet" href="library/fancybox/jquery.fancybox.css" media="screen,projection" />
+  
+  <!-- CUSTOM & SOCIAL BTN STYLE -->
+  <link type="text/css" rel="stylesheet" href="css/social-btn.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/custom.css" media="screen,projection"/>
+
+  <!-- YOUR STYLE -->
+  <link type="text/css" rel="stylesheet" href="#">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!-- Overlay -->
+  <div class="overlay">
+    <div class="col s12 m12 center">
+      <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-pink-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Header -->
+  <header class="indigo inside-header">
+    <!-- Navbar Container -->
+    <div class="navbar-fixed">
+      <!-- nav -->
+      <nav class='indigo darken-2'>
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="index_ori.html" class="brand-logo">Materiable</a>
+            <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="left hide-on-med-and-down">
+              <li><a class="dropdown-button" href="#!" data-activates="home">Home<i class="mdi-hardware-keyboard-arrow-down right"></i></a>
+                <ul id="home" class="dropdown-content">
+                  <li><a href="index_ori.html">Home</a></li>
+                  <li><a href="index-default-slider.html">Default Slider</a></li>
+                  <li><a href="index-navbar-white.html">White Header</a></li>
+                  <li><a href="index-navbar-transparent.html">Transparent Header</a></li>
+                </ul>
+              </li>
+              
+              <li><a class="dropdown-button" href="#!" data-activates="pages">Pages<i class="mdi-hardware-keyboard-arrow-down right"></i></a>
+                <ul id="pages" class="dropdown-content">
+                  <li><a href="about.html">About us</a></li>
+                  <li><a href="about-me.html">About me</a></li>
+                  <li><a href="page-404.html">Error 404</a></li>
+                  <li><a href="page-coming-soon.html">Coming Soon</a></li>
+                  <li><a href="page-faq.html">FAQ</a></li>
+                  <li><a href="footer-style1.html">Footer Style 1</a></li>
+                  <li><a href="footer-style2.html">Footer Style 2</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-button" href="#!" data-activates="blog">Blog<i class="mdi-hardware-keyboard-arrow-down right"></i></a>
+                <ul id="blog" class="dropdown-content">
+                  <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                  <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                  <li><a href="blog-no-sidebar.html">Blog No Sidebar</a></li>
+                  <li><a href="blog-full-width.html">Blog Full Width</a></li>
+                  <li><a href="blog-small-image.html">Blog Small Image</a></li>
+                  <li><a href="blog-with-slider.html">Blog With Slider</a></li>
+                  <li class="divider"></li>
+                  <li><a href="single-post-sidebar.html">Single Post Sidebar</a></li>
+                  <li><a href="single-post-full-width.html">Single Post Full Width</a></li>
+                  <li><a href="single-post-full-image.html">Single Post Full Image</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-button" href="#!" data-activates="portfolio">Portfolio<i class="mdi-hardware-keyboard-arrow-down right"></i></a>
+                <ul id="portfolio" class="dropdown-content">
+                  <li><a href="portfolio-two-col.html">Portfolio Two Col</a></li>
+                  <li><a href="portfolio-three-col.html">Portfolio Three Col</a></li>
+                  <li><a href="portfolio-four-col.html">Portfolio Four Col</a></li>
+                  <li><a href="portfolio-pagination.html">Portfolio Pagination</a></li>
+                  <li><a href="portfolio-masonry.html">Portfolio Masonry</a></li>
+                </ul>
+              </li>
+              <li class="active"><a class="dropdown-button" href="#!" data-activates="elements">Elements<i class="mdi-hardware-keyboard-arrow-down right"></i></a>
+                <ul id="elements" class="dropdown-content">
+                  <li><a href="element-typography.html">Material Typography</a></li>
+                  <li><a href="element-components.html">Material Components</a></li>
+                  <li class="active"><a href="element-forms.html">Material Forms</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-button" href="#!" data-activates="contacts">Contact<i class="mdi-hardware-keyboard-arrow-down right"></i></a>
+                <ul id="contacts" class="dropdown-content">
+                  <li><a href="contact.html">Contact 1</a></li>
+                  <li><a href="contact-2.html">Contact 2</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- Small Screen Side Nav -->
+            <ul id="mobile-nav" class="side-nav">
+              <li><a href="index_ori.html">Home</a></li>
+              <li><a href="index-default-slider.html">Default Slider</a></li>
+              <li><a href="index-navbar-white.html">White Header</a></li>
+              <li><a href="index-navbar-transparent.html">Transparent Header</a></li>
+              <li class="divider"></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="about-me.html">About me</a></li>
+              <li><a href="page-404.html">Error 404</a></li>
+              <li><a href="page-coming-soon.html">Coming Soon</a></li>
+              <li><a href="page-faq.html">FAQ</a></li>
+              <li><a href="footer-style1.html">Footer Style 1</a></li>
+              <li><a href="footer-style2.html">Footer Style 2</a></li>
+              <li class="divider"></li>
+              <li><a  href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+              <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+              <li><a href="blog-no-sidebar.html">Blog No Sidebar</a></li>
+              <li><a href="blog-full-width.html">Blog Full Width</a></li>
+              <li><a href="blog-small-image.html">Blog Small Image</a></li>
+              <li><a href="blog-with-slider.html">Blog With Slider</a></li>
+              <li class="divider"></li>
+              <li><a href="single-post-sidebar.html">Single Post Sidebar</a></li>
+              <li><a href="single-post-full-width.html">Single Post Full Width</a></li>
+              <li><a href="single-post-full-image.html">Single Post Full Image</a></li>
+              <li class="divider"></li>
+              <li><a href="portfolio-two-col.html">Portfolio Two Col</a></li>
+              <li><a href="portfolio-three-col.html">Portfolio Three Col</a></li>
+              <li><a href="portfolio-four-col.html">Portfolio Four Col</a></li>
+              <li><a href="portfolio-pagination.html">Portfolio Pagination</a></li>
+              <li><a href="portfolio-masonry.html">Portfolio Masonry</a></li>
+              <li class="divider"></li>
+              <li><a href="element-typography.html">Material Typography</a></li>
+              <li><a href="element-components.html">Material Components</a></li>
+              <li><a class="active" href="element-forms.html">Material Forms</a></li>
+              <li class="divider"></li>
+              <li><a href="contact.html">Contact 1</a></li>
+              <li><a href="contact-2.html">Contact 2</a></li>
+            </ul>
+            <!--/ Small Screen Side Nav -->
+          </div>
+          <form class="hide-on-med-and-down">
+            <div class="input-field">
+              <input id="search" type="search" required>
+              <label for="search" class="search-label"><i class="material-icons">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </div>
+      </nav>
+      <!--/ nav -->
+    </div>
+    <!--/ Navbar Container -->
+  </header>        
+  <!--/ Header -->
+
+  <!-- Element Page -->
+  <div class="section element-page">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m12">
+          <!-- Page Container -->          
+          <div class="page-container">
+            <div class="row">
+              <div class="col s12 m12">
+                <h4 class="blue-text">Material Forms</h4>
+                <p>Forms are the standard way to receive user inputted data. The transitions and smoothness of these elements are very important because of the inherent user interaction associated with forms.</p>
+
+                <!-- Input fields -->
+                <h4 class="blue-text">Input fields</h4>
+                <p>Text fields allow user input. The border should light up simply and clearly indicating which field the user is currently editing. You must have a .input-field div wrapping your input and label. This helps our jQuery animate the label. This is only used in our Input and Textarea form elements. If you don't want the Green and Red validation states, just remove the validate class from your inputs.</p><br>
+                <div class="row">
+                  <form class="col s12">
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                        <label for="first_name">First Name</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Last Name</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+                        <label for="disabled">Disabled</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <h6>Icon Prefixes</h6>
+                <p>You can add an icon prefix to make the form input label even more clear. Just add an icon with the class prefix before the input and label.</p><br>
+                <div class="row">
+                  <form class="col s12">
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">First Name</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="icon_telephone" type="tel" class="validate">
+                        <label for="icon_telephone">Telephone</label>
+                      </div>
+                    </div>
+                  </form>
+                </div><br>
+                
+                <h4 class="blue-text">Custom Error or Success Messages</h4>  
+                <p>You can add custom validation messages by adding either data-error or data-success attributes to your input field labels.</p>  
+                <div class="row">
+                  <form class="col s12">
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email" data-error="wrong" data-success="right">Email</label>
+                      </div>
+                    </div>
+                  </form>
+                </div><br>
+                <!--/ Input Fields -->
+
+                <!-- Textarea -->
+                <h4 class="blue-text">Textarea</h4> 
+                <p>Textareas allow larger expandable user input. The border should light up simply and clearly indicating which field the user is currently editing. You must have a .input-field div wrapping your input and label. This helps our jQuery animate the label. This is only used in our Input and Textarea form elements.Textareas will auto resize to the text inside.</p> 
+                <div class="row">
+                  <form class="col s12">
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Textarea</label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <h6>Icon Prefixes</h6>  
+                <div class="row">
+                  <form class="col s12">
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <i class="material-icons prefix">mode_edit</i>
+                        <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                        <label for="icon_prefix2">First Name</label>
+                      </div>
+                    </div>
+                  </form>
+                </div><br>
+                <!--/ Textarea -->
+
+                <!-- Select -->
+                <h4 class="blue-text">Select</h4>
+                <p> Select allows user input through specified options. Make sure you wrap it in a .input-field for proper alignment with other text fields.</p>
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <select>
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                      <label>Material Select</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                      <select multiple>
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                      <label>Material Multiple Select</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                      <select multiple>
+                        <optgroup label="team 1">
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                        </optgroup>
+                        <optgroup label="team 2">
+                          <option value="3">Option 3</option>
+                          <option value="4">Option 4</option>
+                        </optgroup>
+                      </select>
+                      <label>Optgroups</label>
+                    </div>
+
+                    <div class="input-field col s12 m6">
+                      <select class="icons">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="" data-icon="img/author01.jpg" class="circle">example 1</option>
+                        <option value="" data-icon="img/author01.jpg" class="circle">example 2</option>
+                        <option value="" data-icon="img/author01.jpg" class="circle">example 1</option>
+                      </select>
+                      <label>Images in select</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                      <select class="icons">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="" data-icon="img/author01.jpg" class="left circle">example 1</option>
+                        <option value="" data-icon="img/author01.jpg" class="left circle">example 2</option>
+                        <option value="" data-icon="img/author01.jpg" class="left circle">example 3</option>
+                      </select>
+                      <label>Images in select</label>
+                    </div>
+
+                    <label>Browser Select</label>
+                    <select class="browser-default">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select>
+                  </div>
+                </form>
+                <br>
+                <!-- Select -->
+
+                <!-- Radio Buttons -->
+                <h4 class="blue-text">Radio Buttons</h4>
+                <p>Radio Buttons are used when the user must make only one selection out of a group of items</p>
+                <form action="#">
+                  <p>
+                    <input name="group1" type="radio" id="test1" />
+                    <label for="test1">Red</label>
+                  </p>
+                  <p>
+                    <input name="group1" type="radio" id="test2" />
+                    <label for="test2">Yellow</label>
+                  </p>
+                  <p>
+                    <input class="with-gap" name="group1" type="radio" id="test3"  />
+                    <label for="test3">Green</label>
+                  </p>
+                    <p>
+                      <input name="group1" type="radio" id="test4" disabled="disabled" />
+                      <label for="test4">Brown</label>
+                  </p>
+                </form><br>
+                <!--/ Radio Buttons -->
+
+                <!-- Checkboxes -->
+                <h4 class="blue-text">Checkboxes</h4>
+                <p>Use checkboxes when looking for yes or no answers. The for attribute is necessary to bind the our custom checkbox with the input. Add the input's id as the value of the for attribute of the label. </p>
+                <form action="#">
+                  <p>
+                    <input type="checkbox" id="test5" />
+                    <label for="test5">Red</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="test6" checked="checked" />
+                    <label for="test6">Yellow</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+                    <label for="filled-in-box">Filled in</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="test7" checked="checked" disabled="disabled" />
+                    <label for="test7">Green</label>
+                  </p>
+                    <p>
+                      <input type="checkbox" id="test8" disabled="disabled" />
+                      <label for="test8">Brown</label>
+                  </p>
+                </form><br>
+                <!--/ Checkboxes -->
+
+                <!-- Switches -->
+                <h4 class="blue-text">Switches</h4>
+                <!-- Switch -->
+                <div class="switch">
+                  <label>
+                    Off
+                    <input type="checkbox">
+                    <span class="lever"></span>
+                    On
+                  </label>
+                </div><br>
+                <!-- Disabled Switch -->
+                <h6>Disabled</h6>
+                <div class="switch">
+                  <label>
+                    Off
+                    <input disabled type="checkbox">
+                    <span class="lever"></span>
+                    On
+                  </label>
+                </div><br>
+                <!--/ Switches -->
+
+                <!-- File Input -->
+                <h4 class="blue-text">File Input</h4>
+                <p>If you want to style an input button with a path input we provide this structure.</p>
+                <form action="#">
+                  <div class="file-field input-field">
+                    <div class="btn waves-effect waves-light blue">
+                      <span>File</span>
+                      <input type="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                      <input class="file-path validate" type="text">
+                    </div>
+                  </div>
+                </form>
+                <h6>Multiple</h6> 
+                <p>You can also use the multiple attribute to allow multiple file uploads. </p>
+                <form action="#">
+                  <div class="file-field input-field">
+                    <div class="btn waves-effect waves-light blue">
+                      <span>File</span>
+                      <input type="file" multiple>
+                    </div>
+                    <div class="file-path-wrapper">
+                      <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                    </div>
+                  </div>
+                </form><br>
+                <!--/ File Input -->
+
+                <!--/ Range -->
+                <h4 class="blue-text">Range</h4>  
+                <p>HTML5 Range</p>
+                <form action="#">
+                  <p class="range-field">
+                    <input type="range" id="test5" min="0" max="100" />
+                  </p>
+                </form><br>
+                <!--/ Range -->
+
+                <!-- Character Counter -->
+                <h4 class="blue-text">Character Counter</h4>
+                <p>Use a character counter in fields where a character restriction is in place.</p> 
+                <div class="row">
+                  <form class="col s12">
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input id="input_text" type="text" length="10">
+                        <label for="input_text">Input text</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea" length="120"></textarea>
+                        <label for="textarea1">Textarea</label>
+                      </div>
+                    </div>
+                  </form>
+                </div><br>              
+                <!--/ Character Counter -->
+              </div>
+            </div>
+          </div>
+          <!--/ Page Container -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Element Page -->
+
+  <!-- Floating btn -->
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large pink accent-2">
+      <i class="mdi-content-add"></i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="large mdi-editor-insert-chart"></i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="large mdi-editor-format-quote"></i></a></li>
+      <li><a class="btn-floating green"><i class="large mdi-editor-publish"></i></a></li>
+      <li><a class="btn-floating blue"><i class="large mdi-editor-attach-file"></i></a></li>
+    </ul>
+  </div>
+  <!--/ Floating btn -->
+
+  <!-- Footer -->
+  <footer class="page-footer indigo">
+    <div class="footer-copyright indigo">
+      <div class="container center">
+        © Copyright - MATERIABLE Blog Demo - powered by <a href="http://themeforest.net/user/toriom" target="_blank">TORIOM</a> Theme 
+      </div>
+    </div>
+  </footer>
+  <!--/ Footer -->
+
+  <!-- Jquery Lib -->
+  <script src="js/jquery-2.2.1.min.js"></script>
+
+  <!-- Jquery Easing -->
+  <script src="js/jquery.easing.1.3.js"></script>
+
+  <!-- Jquery Appear -->
+  <script src="js/jquery.appear.js"></script>
+
+  <!-- Materialize Lib -->
+  <script src="js/materialize.js"></script>
+  
+  <!-- Fotorama -->
+  <script src="library/fotorama/fotorama.js"></script>
+
+  <!-- Swiper Slider -->
+  <script src="library/swiper/js/swiper.min.js"></script>
+  <script src="library/swiper/js/swiper.jquery.min.js"></script>
+  
+  <!-- Fancybox -->
+  <script src="library/fancybox/jquery.fancybox.js"></script>
+
+  <!-- Lazyload -->
+  <script src="js/jquery.lazyload.js"></script>
+
+  <!-- WOW -->
+  <script src="js/wow.min.js"></script>
+
+  <!-- Counter --> 
+  <script src="js/jquery.countTo.js"></script>
+
+  <!-- Countdown -->
+  <script src="js/jquery.countdown.min.js"></script>
+
+  <!-- Masonry Lib -->
+  <script src="js/isotope.pkgd.min.js"></script>
+  
+  <!-- Images Loaded -->
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+
+  <!-- Pie Chart -->
+  <script src="js/jquery.easypiechart.min.js"></script>
+
+  <!-- Google Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+  <script src="js/map.initialize.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="js/custom.js"></script>
+  </body>
+</html>

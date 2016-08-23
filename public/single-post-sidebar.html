@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en-US"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en-US"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en-US"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. --> 
+<head>
+  <title>Materiable - Material Design Theme</title>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <!-- MOBILE STATUS BAR COLOR -->
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#303f9f">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#303f9f">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- FAVICON -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/favicon@2x.png" rel="icon">
+  <link href="img/iphone-favicon.png" rel="apple-touch-icon">
+  <link href="img/iphone-favicon@2x.png" rel="apple-touch-icon" sizes="76x76" />
+  <link href="img/ipad-favicon.png" rel="apple-touch-icon" sizes="120x120" />
+  <link href="img/ipad-favicon@2x.png" rel="apple-touch-icon" sizes="152x152" />
+
+  <!-- MATERIALIZE CSS -->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+  
+  <!-- FONTAWESOME -->
+  <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" media="screen,projection">
+  <!-- MATERIAL ICONS -->
+  <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- SWIPER SLIDER -->
+  <link type="text/css" rel="stylesheet" href="library/swiper/css/swiper.min.css">
+
+  <!-- ANIMATIONS -->
+  <link type="text/css" rel="stylesheet" href="css/animate.css" media="screen,projection">
+  
+  <!-- FOTORAMA CAROUSEL -->
+  <link type="text/css" rel="stylesheet" href="library/fotorama/fotorama.css" media="screen,projection">
+  
+  <!-- FANCYBOX -->
+  <link type="text/css" rel="stylesheet" href="library/fancybox/jquery.fancybox.css" media="screen,projection" />
+  
+  <!-- CUSTOM & SOCIAL BTN STYLE -->
+  <link type="text/css" rel="stylesheet" href="css/social-btn.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/custom.css" media="screen,projection"/>
+
+  <!-- YOUR STYLE -->
+  <link type="text/css" rel="stylesheet" href="#">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!-- Overlay -->
+  <div class="overlay">
+    <div class="col s12 m12 center">
+      <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-pink-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Header -->
+  <header class="indigo inside-header">
+    <!-- Navbar Container -->
+    <div class="navbar-fixed">
+      <!-- nav -->
+      <nav class='indigo darken-2'>
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="index_ori.html" class="brand-logo">Materiable</a>
+            <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="left hide-on-med-and-down">
+              <li><a class="dropdown-button" href="#!" data-activates="home">Home<i class="mdi-hardware-keyboard-arrow-down right"></i></a>
+                <ul id="home" class="dropdown-content">
+                  <li><a href="index_ori.html">Home</a></li>
+                  <li><a href="index-default-slider.html">Default Slider</a></li>
+                  <li><a href="index-navbar-white.html">White Header</a></li>
+                  <li><a href="index-navbar-transparent.html">Transparent Header</a></li>
+                </ul>
+              </li>
+              
+              <li><a class="dropdown-button" href="#!" data-activates="pages">Pages<i class="mdi-hardware-keyboard-arrow-down right"></i></a>
+                <ul id="pages" class="dropdown-content">
+                  <li><a href="about.html">About us</a></li>
+                  <li><a href="about-me.html">About me</a></li>
+                  <li><a href="page-404.html">Error 404</a></li>
+                  <li><a href="page-coming-soon.html">Coming Soon</a></li>
+                  <li><a href="page-faq.html">FAQ</a></li>
+                  <li><a href="footer-style1.html">Footer Style 1</a></li>
+                  <li><a href="footer-style2.html">Footer Style 2</a></li>
+                </ul>
+              </li>
+              <li class="active"><a class="dropdown-button" href="#!" data-activates="blog">Blog<i class="mdi-hardware-keyboard-arrow-down right"></i></a>
+                <ul id="blog" class="dropdown-content">
+                  <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                  <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                  <li><a href="blog-no-sidebar.html">Blog No Sidebar</a></li>
+                  <li><a href="blog-full-width.html">Blog Full Width</a></li>
+                  <li><a href="blog-small-image.html">Blog Small Image</a></li>
+                  <li><a href="blog-with-slider.html">Blog With Slider</a></li>
+                  <li class="divider"></li>
+                  <li class="active"><a href="single-post-sidebar.html">Single Post Sidebar</a></li>
+                  <li><a href="single-post-full-width.html">Single Post Full Width</a></li>
+                  <li><a href="single-post-full-image.html">Single Post Full Image</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-button" href="#!" data-activates="portfolio">Portfolio<i class="mdi-hardware-keyboard-arrow-down right"></i></a>
+                <ul id="portfolio" class="dropdown-content">
+                  <li><a href="portfolio-two-col.html">Portfolio Two Col</a></li>
+                  <li><a href="portfolio-three-col.html">Portfolio Three Col</a></li>
+                  <li><a href="portfolio-four-col.html">Portfolio Four Col</a></li>
+                  <li><a href="portfolio-pagination.html">Portfolio Pagination</a></li>
+                  <li><a href="portfolio-masonry.html">Portfolio Masonry</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-button" href="#!" data-activates="elements">Elements<i class="mdi-hardware-keyboard-arrow-down right"></i></a>
+                <ul id="elements" class="dropdown-content">
+                  <li><a href="element-typography.html">Material Typography</a></li>
+                  <li><a href="element-components.html">Material Components</a></li>
+                  <li><a href="element-forms.html">Material Forms</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-button" href="#!" data-activates="contacts">Contact<i class="mdi-hardware-keyboard-arrow-down right"></i></a>
+                <ul id="contacts" class="dropdown-content">
+                  <li><a href="contact.html">Contact 1</a></li>
+                  <li><a href="contact-2.html">Contact 2</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- Small Screen Side Nav -->
+            <ul id="mobile-nav" class="side-nav">
+              <li><a href="index_ori.html">Home</a></li>
+              <li><a href="index-default-slider.html">Default Slider</a></li>
+              <li><a href="index-navbar-white.html">White Header</a></li>
+              <li><a href="index-navbar-transparent.html">Transparent Header</a></li>
+              <li class="divider"></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="about-me.html">About me</a></li>
+              <li><a href="page-404.html">Error 404</a></li>
+              <li><a href="page-coming-soon.html">Coming Soon</a></li>
+              <li><a href="page-faq.html">FAQ</a></li>
+              <li><a href="footer-style1.html">Footer Style 1</a></li>
+              <li><a href="footer-style2.html">Footer Style 2</a></li>
+              <li class="divider"></li>
+              <li><a  href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+              <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+              <li><a href="blog-no-sidebar.html">Blog No Sidebar</a></li>
+              <li><a href="blog-full-width.html">Blog Full Width</a></li>
+              <li><a href="blog-small-image.html">Blog Small Image</a></li>
+              <li><a href="blog-with-slider.html">Blog With Slider</a></li>
+              <li class="divider"></li>
+              <li><a class="active" href="single-post-sidebar.html">Single Post Sidebar</a></li>
+              <li><a href="single-post-full-width.html">Single Post Full Width</a></li>
+              <li><a href="single-post-full-image.html">Single Post Full Image</a></li>
+              <li class="divider"></li>
+              <li><a href="portfolio-two-col.html">Portfolio Two Col</a></li>
+              <li><a href="portfolio-three-col.html">Portfolio Three Col</a></li>
+              <li><a href="portfolio-four-col.html">Portfolio Four Col</a></li>
+              <li><a href="portfolio-pagination.html">Portfolio Pagination</a></li>
+              <li><a href="portfolio-masonry.html">Portfolio Masonry</a></li>
+              <li class="divider"></li>
+              <li><a href="element-typography.html">Material Typography</a></li>
+              <li><a href="element-components.html">Material Components</a></li>
+              <li><a href="element-forms.html">Material Forms</a></li>
+              <li class="divider"></li>
+              <li><a href="contact.html">Contact 1</a></li>
+              <li><a href="contact-2.html">Contact 2</a></li>
+            </ul>
+            <!--/ Small Screen Side Nav -->
+          </div>
+          <form class="hide-on-med-and-down">
+            <div class="input-field">
+              <input id="search" type="search" required>
+              <label for="search" class="search-label"><i class="material-icons">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </div>
+      </nav>
+      <!--/ nav -->
+    </div>
+    <!--/ Navbar Container -->
+  </header>        
+  <!--/ Header -->
+
+  <!-- Blogs container -->
+  <div class="section blogs">
+    <div class="container">
+      <div class="row no-margin-bottom">
+        <!-- Left Sidebar -->
+        <div class="col s12 m4 sidebar">
+          <!-- Author Tabs -->
+          <div class="row no-margin-bottom">
+            <div class="col s12 m12">
+              <ul class="tabs">
+                <li class="tab col s3"><a class="active" href="#tab1">About Me</a></li>
+                <li class="tab col s3"><a href="#tab2">Follow Me</a></li>
+                <li class="tab col s3"><a href="#tab3">Portfolio</a></li>
+              </ul>
+            </div>
+
+            <!-- About Me -->
+            <div class="col s12">
+              <div id="tab1" class="panel author-panel">
+                <div class="center auth-img"><a href="about-me.html" title="Leonardo J.Kem"><img src="img/author01.jpg" alt="Leonardo J.Kem" class="circle responsive-img"></a></div>
+                <div class="auth-cont">
+                  <h4 class="center"><a href="about-me.html">Leonardo J.Kem</a></h4>
+                  <p class="center location"><i class="mdi-action-room"></i> San Fransisco, CA</p>
+                  <p class="center">Lorem ipsum dolor sit amet, consecteturadi piscing elit, sed do eiusmod tempor</p>
+                  <div class="center"><a href="about-me.html" class="waves-effect waves-blue btn-flat blue-text">More</a></div>
+                </div>
+              </div>
+            </div>
+            <!--/ About Me --> 
+
+            <!-- Follow me -->
+            <div class="col s12">
+              <div id="tab2" class="panel author-panel">
+                <h3>Social Media</h3>
+                <div class="row">
+                  <div class="col s12 follow-btn center">
+                    <a href="#" title=""><i class="fa fa-facebook"></i></a>
+                    <a href="#" title=""><i class="fa fa-twitter"></i></a>
+                    <a href="#" title=""><i class="fa fa-linkedin"></i></a>
+                    <a href="#" title=""><i class="fa fa-dribbble"></i></a>
+                    <a href="#" title=""><i class="fa fa-behance"></i></a>
+                    <a href="#" title=""><i class="fa fa-instagram"></i></a>
+                  </div>
+                </div>
+                <div class="center"><a href="about-me.html" class="waves-effect waves-light btn blue">More</a></div>
+              </div>
+            </div>
+            <!--/ Follow me -->
+
+            <!-- My Portfolio -->
+            <div class="col s12">
+              <div id="tab3" class="panel author-panel">
+                <div class="row portfolio">
+                  <div class="col s4">
+                    <a href="portfolio-three-col.html"><img src="img/portfolio/01.jpg" class="responsive-img"></a>
+                  </div>
+                  <div class="col s4">
+                    <a href="portfolio-three-col.html"><img src="img/portfolio/02.jpg" class="responsive-img"></a>
+                  </div>
+                  <div class="col s4">
+                    <a href="portfolio-three-col.html"><img src="img/portfolio/03.jpg" class="responsive-img"></a>
+                  </div>
+                  <div class="col s4">
+                    <a href="portfolio-three-col.html"><img src="img/portfolio/04.jpg" class="responsive-img"></a>
+                  </div>
+                  <div class="col s4">
+                    <a href="portfolio-three-col.html"><img src="img/portfolio/05.jpg" class="responsive-img"></a>
+                  </div>
+                  <div class="col s4">
+                    <a href="portfolio-three-col.html"><img src="img/portfolio/06.jpg" class="responsive-img"></a>
+                  </div>
+                  <div class="center"><a href="portfolio-three-col.html" class="waves-effect waves-light btn blue">More</a></div>
+                </div>
+              </div>
+            </div>
+            <!--/ My Work -->
+          </div>
+          <!--/ Author Tabs -->
+
+          <!-- Search Panel -->
+          <div class="panel search-panel">
+            <h3>Search Box</h3>
+            <div class="row no-margin-bottom">
+              <div class="input-field col s12">
+                <input placeholder="Write Here..." id="Search" type="text" class="validate">
+                <label for="Search">Search</label>
+              </div>
+            </div>
+          </div>
+          <!-- Search Panel -->
+
+          <!-- Post tabs -->
+          <div class="panel post-tabs">
+            <div class="row no-margin-bottom">
+              <div class="col s12 m12">
+                <ul class="tabs">
+                  <li class="tab col s3"><a class="active" href="#Latest">Latest</a></li>
+                  <li class="tab col s3"><a href="#Popular">Popular</a></li>
+                  <li class="tab col s3"><a href="#Top-Rating">Top Rating</a></li>
+                </ul>
+              </div>
+              <div class="col s12">
+                <!-- Latest tap -->
+                <div id="Latest" class="tab-content left">
+                  <div class="post-list">
+                    <div class="col s4 m4"><a href="single-post-sidebar.html"><img class="responsive-img" src="img/blog/small/01.jpg" /></a></div>
+                    <div class="col s8 m8">
+                      <h4><a href="single-post-sidebar.html">What is Material Design?</a></h4>
+                      <p class="date">February 12, 2016</p>
+                    </div>
+                  </div>
+                  <div class="post-list">
+                    <div class="col s4 m4"><a href="single-post-sidebar.html"><img class="responsive-img" src="img/blog/small/02.jpg" /></a></div>
+                    <div class="col s8 m8">
+                      <h4><a href="single-post-sidebar.html">Introduction To Material Design</a></h4>
+                      <p class="date">February 12, 2016</p>
+                    </div>
+                  </div>
+                  <div class="post-list">
+                    <div class="col s4 m4"><a href="single-post-sidebar.html"><img class="responsive-img" src="img/blog/small/03.jpg" /></a></div>
+                    <div class="col s8 m8">
+                      <h4><a href="single-post-sidebar.html">Material Design Animation</a></h4>
+                      <p class="date">February 12, 2016</p>
+                    </div>
+                  </div>
+                </div>
+                <!--/ Latest tap -->
+
+                <!-- Popular tap -->
+                <div id="Popular" class="tab-content left">
+                  <div class="post-list">
+                    <div class="col s4 m4"><a href="single-post-sidebar.html"><img class="responsive-img" src="img/blog/small/05.jpg" /></a></div>
+                    <div class="col s8 m8">
+                      <h4><a href="single-post-sidebar.html">Material Design Components</a></h4>
+                      <p class="date">February 12, 2016</p>
+                    </div>
+                  </div>
+                  <div class="post-list">
+                    <div class="col s4 m4"><a href="single-post-sidebar.html"><img class="responsive-img" src="img/blog/small/01.jpg" /></a></div>
+                    <div class="col s8 m8">
+                      <h4><a href="single-post-sidebar.html">Material Design Colors</a></h4>
+                      <p class="date">February 12, 2016</p>
+                    </div>
+                  </div>
+                  <div class="post-list">
+                    <div class="col s4 m4"><a href="single-post-sidebar.html"><img class="responsive-img" src="img/blog/small/04.jpg" /></a></div>
+                    <div class="col s8 m8">
+                      <h4><a href="single-post-sidebar.html">What's new in Material </a></h4>
+                      <p class="date">February 12, 2016</p>
+                    </div>
+                  </div>
+                </div>
+                <!--/ Popular tap -->
+
+                <!-- Top Rating tap -->
+                <div id="Top-Rating" class="tab-content left">
+                  <div class="post-list">
+                    <div class="col s4 m4"><a href="single-post-sidebar.html"><img class="responsive-img" src="img/blog/small/03.jpg" /></a></div>
+                    <div class="col s8 m8">
+                      <h4><a href="single-post-sidebar.html">Material Design Components</a></h4>
+                      <p class="date">February 12, 2016</p>
+                    </div>
+                  </div>
+                  <div class="post-list">
+                    <div class="col s4 m4"><a href="single-post-sidebar.html"><img class="responsive-img" src="img/blog/small/05.jpg" /></a></div>
+                    <div class="col s8 m8">
+                      <h4><a href="single-post-sidebar.html">What's new in Material </a></h4>
+                      <p class="date">February 12, 2016</p>
+                    </div>
+                  </div>
+                  <div class="post-list">
+                    <div class="col s4 m4"><a href="single-post-sidebar.html"><img class="responsive-img" src="img/blog/small/01.jpg" /></a></div>
+                    <div class="col s8 m8">
+                      <h4><a href="single-post-sidebar.html">What is Material Design?</a></h4>
+                      <p class="date">February 12, 2016</p>
+                    </div>
+                  </div>
+                </div>
+                <!--/ Top Rating tap -->
+              </div>
+            </div>
+          </div>
+          <!--/ Post tabs -->
+
+          <!-- Last Comments -->
+          <div class="panel last-comment">
+            <h3>Latest comments</h3>
+            <div class="comment-list">
+              <div class="comment">
+                <a href="about-me.html" class="auth">Steve Pancake</a> commented on <a href="single-post-sidebar.html">Lorem ipsum dolor sit amet</a>
+                <p class="comment-text">Lorem ipsum dolor sit amet, consecteturadi piscing elit, sed do eiusmod tempor</p>
+                <span class='date'><i class="mdi-device-access-time"></i> Just Now</span>
+              </div>
+              <div class="comment">
+                <a href="about-me.html" class="auth">Steve Pancake</a> commented on <a href="single-post-sidebar.html">Lorem ipsum dolor sit amet</a>
+                <p class="comment-text">Lorem ipsum dolor sit amet, consecteturadi piscing elit, sed do eiusmod tempor</p>
+                <span class='date'><i class="mdi-device-access-time"></i> 15 minutes ago</span>
+              </div>
+              <div class="comment">
+                <a href="about-me.html" class="auth">Steve Pancake</a> commented on <a href="single-post-sidebar.html">Lorem ipsum dolor sit amet</a>
+                <p class="comment-text">Lorem ipsum dolor sit amet, consecteturadi piscing elit, sed do eiusmod tempor</p>
+                <span class='date'><i class="mdi-device-access-time"></i> 1 Day Ago</span>
+              </div>
+            </div>
+          </div>
+          <!--/ Last Comments -->
+          
+          <!-- Categories -->
+          <div class="panel">
+            <ul class="categories">
+              <h3>Blog Categories</h3>
+              <li><a href="#!"><i class="mdi-action-home"></i> Web Design</a></li>
+              <li><a href="#!"><i class="mdi-action-dashboard"></i> Logo Design</a></li>
+              <li class="active"><a href="#!"><i class="mdi-action-view-carousel"></i> UX/UI Design</a></li>
+              <li><a href="#!"><i class="mdi-image-collections"></i> Photography</a></li>
+              <li><a href="#!"><i class="mdi-content-send"></i> Freelancing</a></li>
+              <li><a href="#!"><i class="mdi-editor-format-quote"></i> Experimental</a></li>
+            </ul>
+          </div>
+          <!--/ Categories -->
+
+          <!-- Popular Posts -->
+          <div class="panel popular-posts">
+            <h3>Popular Posts</h3>
+            <div class="row no-margin-bottom">
+              <div class="post-list">
+                <div class="col s4 m4"><a href="single-post-sidebar.html"><img src="img/blog/small/01.jpg" class="responsive-img"></a></div>
+                <div class="col s8 m8">
+                  <h4><a href="single-post-sidebar.html">Lorem ipsum dolor sit amet, consectetur</a></h4>
+                  <p class="date">February 29, 2016</p>
+                </div>
+              </div>
+              <div class="post-list">
+                <div class="col s4 m4"><a href="single-post-sidebar.html"><img src="img/blog/small/02.jpg" class="responsive-img"></a></div>
+                <div class="col s8 m8">
+                  <h4><a href="single-post-sidebar.html">sed do eiusmod tempor incididunt ut labore</a></h4>
+                  <p class="date">February 15, 2016</p>
+                </div>
+              </div>
+              <div class="post-list">
+                <div class="col s4 m4"><a href="single-post-sidebar.html"><img src="img/blog/small/03.jpg" class="responsive-img"></a></div>
+                <div class="col s8 m8">
+                  <h4><a href="single-post-sidebar.html">Lorem ipsum dolor sit amet, consectetur</a></h4>
+                  <p class="date">February 01, 2016</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/ Popular Posts -->
+
+          <!-- Tags -->
+          <div class="panel tags-panel">
+            <h3>Tags Cloud</h3>
+            <div class="row tag-cloud">
+              <div class="col s12 m12">
+                <a href="#!"><span class="chip">Material</span></a>
+                <a href="#!"><span class="chip">Blog theme</span></a>
+                <a href="#!"><span class="chip">CSS3</span></a>
+                <a href="#!"><span class="chip">ECommerce</span></a>
+                <a href="#!"><span class="chip">Fully responsive template</span></a>
+                <a href="#!"><span class="chip">Workflow</span></a>
+                <a href="#!"><span class="chip">Material design</span></a>
+                <a href="#!"><span class="chip">Social</span></a>
+                <a href="#!"><span class="chip">Html template</span></a>
+                <a href="#!"><span class="chip">business coding</span></a>
+              </div>
+            </div>
+          </div>
+          <!--/ Tags -->
+        </div>
+        <!--/ Left Sidebar --> 
+
+        <div class="col s12 m8">
+          <!-- Single post -->          
+          <div class="page-container single">
+            <!-- Post content -->
+            <div class="post single-post no-margin-bottom">
+              <div class="post-img"><a href="#!"><img src="img/blog/01.jpg" class="responsive-img materialboxed"></a></div>
+              <h2><a href="#!">Featured image post</a></h2>
+              <div class="post-meta grey-text">
+                <span class="author"><i class="mdi-social-person"></i> By : <a href="about-me.html">Leonardo J.Kem</a></span>
+                <span class="category left">
+                  <i class="mdi-action-bookmark-outline"></i>
+                  <a href="#!" class="grey-text">UX/UI Design</a>, 
+                  <a href="#!" class="grey-text">Web Design</a>
+                </span>
+                <span class="date"><i class="mdi-device-access-time"></i> <a href="#!" class="grey-text">February 12, 2016</a></span>
+              </div>
+              <div class="single-content text-darken-2">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
+
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,</p>
+
+                <p>consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
+                <h4>1. Sed ut perspiciatis unde omnis</h4>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+
+                <h4>2. Sed quia non numquam eius</h4>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                
+                <h4>3. Totam rem aperiam, eaque ipsa quae</h4>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                
+                <h4>4. Voluptatem accusantium</h4>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+
+                <h4>5. Sed quia non numquam eius</h4>
+                <p>totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+              </div>
+              <div class="row no-margin-bottom">
+                <div class="col s12 m6 post-auth">
+                  <div class="row">
+                    <div class="col s2 m3"><img src="img/author01.jpg" class="circle z-depth-1 responsive-img"></div>
+                    <div class="col m9">
+                    <div class="grey-text text-darken-4">By: <a href="about-me.html">Leonardo J.Kem</a></div>
+                    <p class="gray-text text-darken-1">I’m interested in researching <br>Web sites, and exploring the artistic</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 m6">
+                  <div class="row tag-cloud">
+                    <div class="col s4 m2">Tags:</div>
+                    <div class="col s8 m10">
+                      <a href="#!"><span class="chip">Design process</span></a>
+                      <a href="#!"><span class="chip">Logo design</span></a>
+                      <a href="#!"><span class="chip">Steps during logo design</span></a>
+                      <a href="#!"><span class="chip">UX</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/ Post content -->
+          </div>
+          <!--/ Single post -->
+          
+          <!-- Comments -->
+          <div class="row no-margin-bottom">
+            <div class="col s12 m12">
+              <div class="single-comments">
+                <h3>Latest Comments</h3>
+                <div class="comment-time-line">
+                  <div class="v-line"></div>
+                  <!-- The Comment -->
+                  <div class="comment">
+                    <span data-position="left" data-delay="50" data-tooltip="13-3-2015" class="tooltipped dot light-green lighten-1"></span>
+                    <img class="left circle responsive-img" src="img/author01.jpg">
+                    <a href="about-me.html" class="left light-green-text text-lighten-1 comment-auth">Steve Pancake</a>
+                    <div class="row">
+                      <div class="comment-txt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        <span class="comment-btn"><a href="#!"><i class="mdi-action-favorite"></i></a> <a href="#!"><i class="mdi-content-reply"></i></a></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/ The Comment -->
+
+                  <!-- The Comment -->
+                  <div class="comment">
+                    <span data-position="left" data-delay="50" data-tooltip="13-3-2015" class="tooltipped dot blue "></span>
+                    <img class="left circle responsive-img" src="img/author01.jpg">
+                    <a href="about-me.html" class="left blue-text comment-auth">Steve Pancake</a>
+                    <div class="row">
+                      <div class="comment-txt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua </p>
+                        <span class="comment-btn"><a href="#!"><i class="mdi-action-favorite"></i></a> <a href="#!"><i class="mdi-content-reply"></i></a></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!--/ The Comment -->
+
+                  <!-- The Comment -->
+                  <div class="comment">
+                    <span data-position="left" data-delay="50" data-tooltip="12-2-2015" class="tooltipped dot orange"></span>
+                    <img class="left circle responsive-img" src="img/author01.jpg">
+                    <a href="about-me.html" class="left orange-text comment-auth">Mohammed Kem</a>
+                    <div class="row">
+                      <div class="comment-txt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        <span class="comment-btn"><a href="#!"><i class="mdi-action-favorite"></i></a> <a href="#!"><i class="mdi-content-reply"></i></a></span>
+                      </div>
+                    </div>
+
+                    <!-- Sub Comment -->
+                    <div class="comment">
+                      <span data-position="left" data-delay="50" data-tooltip="25-1-2015" class="tooltipped dot deep-orange"></span>
+                      <img class="left circle responsive-img" src="img/author01.jpg">
+                      <a href="about-me.html" class="left deep-orange-text comment-auth">Jony done</a>
+                      <div class="row">
+                        <div class="comment-txt">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                          <span class="comment-btn"><a href="#!"><i class="mdi-action-favorite"></i></a> <a href="#!"><i class="mdi-content-reply"></i></a></span>
+                        </div>
+                      </div>
+                    </div>
+                    <!--/ Sub Comment -->
+                  </div>
+                  <!--/ The Comment -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/ Comments -->
+
+          <!-- Submit Comment -->
+          <div class="row">
+            <div class="col m12 ">
+              <div class="single-comments">
+                <h3>Leave a Comment</h3>
+                <form class="row submit-comment">
+                  <div class="input-field col s12">
+                    <i class="mdi-social-person prefix"></i>
+                    <input type="text" class="validate" id="icon_prefix">
+                    <label for="icon_prefix">Your Name</label>
+                  </div>
+                  <div class="input-field col s12">
+                    <i class="mdi-content-mail prefix"></i>
+                    <input type="email" class="validate" id="icon_email">
+                    <label for="icon_email">Your Email</label>
+                  </div>
+                   <div class="input-field col s12">
+                    <i class="mdi-social-people prefix"></i>
+                    <input type="text" class="validate" id="icon_job">
+                    <label for="icon_job">Your Job</label>
+                  </div>
+                   <div class="input-field col s12">
+                    <i class="mdi-communication-messenger prefix"></i>
+                    <textarea class="validate materialize-textarea" id="icon_message"></textarea>
+                    <label for="icon_message">Your Comment</label>
+                  </div>
+                  <div class="right">
+                    <a class="waves-effect waves-blue btn-flat">Clear</a>
+                    <a class="waves-effect waves-blue btn-flat blue-text">Add Comment</a> 
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!--/ Submit Comment -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Blogs container section -->
+
+  <!-- Floating btn -->
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large pink accent-2">
+      <i class="mdi-content-add"></i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="large mdi-editor-insert-chart"></i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="large mdi-editor-format-quote"></i></a></li>
+      <li><a class="btn-floating green"><i class="large mdi-editor-publish"></i></a></li>
+      <li><a class="btn-floating blue"><i class="large mdi-editor-attach-file"></i></a></li>
+    </ul>
+  </div>
+  <!--/ Floating btn -->
+
+  <!-- Footer -->
+  <footer class="page-footer indigo">
+    <div class="footer-copyright indigo">
+      <div class="container center">
+        © Copyright - MATERIABLE Blog Demo - powered by <a href="http://themeforest.net/user/toriom" target="_blank">TORIOM</a> Theme 
+      </div>
+    </div>
+  </footer>
+  <!--/ Footer -->
+
+  <!-- Jquery Lib -->
+  <script src="js/jquery-2.2.1.min.js"></script>
+
+  <!-- Jquery Easing -->
+  <script src="js/jquery.easing.1.3.js"></script>
+
+  <!-- Jquery Appear -->
+  <script src="js/jquery.appear.js"></script>
+
+  <!-- Materialize Lib -->
+  <script src="js/materialize.js"></script>
+  
+  <!-- Fotorama -->
+  <script src="library/fotorama/fotorama.js"></script>
+
+  <!-- Swiper Slider -->
+  <script src="library/swiper/js/swiper.min.js"></script>
+  <script src="library/swiper/js/swiper.jquery.min.js"></script>
+  
+  <!-- Fancybox -->
+  <script src="library/fancybox/jquery.fancybox.js"></script>
+
+  <!-- Lazyload -->
+  <script src="js/jquery.lazyload.js"></script>
+
+  <!-- WOW -->
+  <script src="js/wow.min.js"></script>
+
+  <!-- Counter --> 
+  <script src="js/jquery.countTo.js"></script>
+
+  <!-- Countdown -->
+  <script src="js/jquery.countdown.min.js"></script>
+
+  <!-- Masonry Lib -->
+  <script src="js/isotope.pkgd.min.js"></script>
+  
+  <!-- Images Loaded -->
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+
+  <!-- Pie Chart -->
+  <script src="js/jquery.easypiechart.min.js"></script>
+  
+  <!-- Google Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+  <script src="js/map.initialize.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/custom.js"></script>
+  </body>
+</html>
