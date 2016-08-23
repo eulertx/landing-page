@@ -173,43 +173,43 @@ $(document).ready(function(){
   pie_chart();
 
   // Tweet
-  $.ajax({
-    url: 'php/get_tweets.php',
-    type: 'GET',
-    success: function(response) {
-
-      if (typeof response.errors === 'undefined' || response.errors.length < 1) {
-        
-        var $tweets = $('<div class="tweetfeed"></div>');
-        console.log(response);
-        $.each(response, function(i, obj) {
-          var created_at = obj.created_at.split('+');
-          $tweets.append('<div class="tweet"><div class="tweet-content z-depth-1"><a target="_blank" href="http://twitter.com/' + obj.user.name +'">'+ obj.user.name +'</a> ' + obj.text + '</div><div class="tweet-date"><i class="mdi-device-access-time"></i>' + created_at[0] + '</div></div>');
-        });
-
-        $('.tweetfeed').html($tweets);
-
-        var divs = $('.tweetfeed .tweet'),interval, current = jQuery(divs[0]);
-        var cycle = function(){
-          var prev = current;   
-          current = current.next();
-          if (current.length == 0){
-            current = jQuery(divs[0]);
-          }    
-          prev.fadeOut(function(){
-            current.fadeIn(); 
-          });
-        }
-        interval = window.setInterval(cycle, 6000);  
-
-      } else {
-        $('.tweetfeed p:first').text('Response error');
-      }
-    },
-    error: function(errors) {
-      $('.tweetfeed p:first').text('Request error');
-    }
-  });
+  // $.ajax({
+  //   url: 'php/get_tweets.php',
+  //   type: 'GET',
+  //   success: function(response) {
+  //
+  //     if (typeof response.errors === 'undefined' || response.errors.length < 1) {
+  //
+  //       var $tweets = $('<div class="tweetfeed"></div>');
+  //       console.log(response);
+  //       $.each(response, function(i, obj) {
+  //         var created_at = obj.created_at.split('+');
+  //         $tweets.append('<div class="tweet"><div class="tweet-content z-depth-1"><a target="_blank" href="http://twitter.com/' + obj.user.name +'">'+ obj.user.name +'</a> ' + obj.text + '</div><div class="tweet-date"><i class="mdi-device-access-time"></i>' + created_at[0] + '</div></div>');
+  //       });
+  //
+  //       $('.tweetfeed').html($tweets);
+  //
+  //       var divs = $('.tweetfeed .tweet'),interval, current = jQuery(divs[0]);
+  //       var cycle = function(){
+  //         var prev = current;
+  //         current = current.next();
+  //         if (current.length == 0){
+  //           current = jQuery(divs[0]);
+  //         }
+  //         prev.fadeOut(function(){
+  //           current.fadeIn();
+  //         });
+  //       }
+  //       interval = window.setInterval(cycle, 6000);
+  //
+  //     } else {
+  //       $('.tweetfeed p:first').text('Response error');
+  //     }
+  //   },
+  //   error: function(errors) {
+  //     $('.tweetfeed p:first').text('Request error');
+  //   }
+  // });
 
 
   // Comment Time Line 
