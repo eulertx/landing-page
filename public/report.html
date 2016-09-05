@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en-US"> <![endif]-->
+<!--[if IE 9 ]>
+<html class="ie ie9 ie-lt10 no-js" lang="en-US"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en-US"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+<head>
+    <title>Euler genomic</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- MOBILE STATUS BAR COLOR -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#303f9f">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#303f9f">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- FAVICON -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/favicon@2x.png" rel="icon">
+    <link href="img/iphone-favicon.png" rel="apple-touch-icon">
+    <link href="img/iphone-favicon@2x.png" rel="apple-touch-icon" sizes="76x76"/>
+    <link href="img/ipad-favicon.png" rel="apple-touch-icon" sizes="120x120"/>
+    <link href="img/ipad-favicon@2x.png" rel="apple-touch-icon" sizes="152x152"/>
+
+    <!-- MATERIALIZE CSS -->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+
+    <!-- FONTAWESOME -->
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" media="screen,projection">
+    <!-- MATERIAL ICONS -->
+    <!--<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"-->
+    <!--rel="stylesheet">-->
+    <link type="text/css" rel="stylesheet" href="https://fonts.css.network/icon?family=Material+Icons"
+          rel="stylesheet">
+
+    <!-- SWIPER SLIDER -->
+    <link type="text/css" rel="stylesheet" href="library/swiper/css/swiper.min.css">
+
+    <!-- ANIMATIONS -->
+    <link type="text/css" rel="stylesheet" href="css/animate.css" media="screen,projection">
+
+    <!-- FOTORAMA CAROUSEL -->
+    <link type="text/css" rel="stylesheet" href="library/fotorama/fotorama.css" media="screen,projection">
+
+    <!-- FANCYBOX -->
+    <link type="text/css" rel="stylesheet" href="library/fancybox/jquery.fancybox.css" media="screen,projection"/>
+
+    <!-- CUSTOM & SOCIAL BTN STYLE -->
+    <link type="text/css" rel="stylesheet" href="css/social-btn.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/custom.css" media="screen,projection"/>
+
+    <!-- REPORT -->
+    <link type="text/css" rel="stylesheet" href="css/report.css" media="screen,projection"/>
+
+    <!-- YOUR STYLE -->
+    <link type="text/css" rel="stylesheet" href="#">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- Overlay -->
+    <div class="overlay">
+        <div class="col s12 m12 center">
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-pink-only">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Header -->
+<header>
+    <!-- Navbar Container -->
+    <div class="navbar">
+        <!-- nav -->
+        <nav class='indigo darken-2'>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <img class="brand-logo" src="img/euler.png"/>
+                </div>
+            </div>
+        </nav>
+        <!--/ nav -->
+    </div>
+    <!--/ Navbar Container -->
+</header>
+<!--/ Header -->
+
+<!-- report -->
+<div class="section report" ms-controller="report">
+    <div class="report-info">
+        <h3 class="report-title">{{@report.title}}</h3>
+        <p class="report-importent">报告编号: {{@report.reprotNumber}}</p>
+        <div class="report-company">
+            <p class="company-name">{{@report.companyInfo.name}}</p>
+            <p>
+                联系人: <span ms-for="($index, contact) in @report.companyInfo.contact">{{contact}}<span ms-if="$index + 1 !== @report.companyInfo.contact.length">(和)</span></span>
+            </p>
+            <p>
+                联系电话: <span ms-for="($index, number) in @report.companyInfo.contactNumber">{{number}}<span ms-if="$index + 1 !== @report.companyInfo.contactNumber.length">;</span></span>
+            </p>
+            <p>
+                通讯地址: {{@report.companyInfo.contactAddress}}
+            </p>
+        </div>
+    </div>
+    <table class="report-table">
+        <tr>
+            <th colspan="9">客户样本信息</th>
+        </tr>
+        <tr>
+            <td>家系</td>
+            <td>性别</td>
+            <td>年龄</td>
+            <td>与先症者关系</td>
+            <td>样本类型</td>
+            <td>送检机构</td>
+            <td>送检人员</td>
+            <td>送检日期</td>
+            <td>样品编号</td>
+        </tr>
+        <tr>
+            <td>{{@report.reportInfo.sampleInformation.family}}</td>
+            <td>{{@report.reportInfo.sampleInformation.sex}}</td>
+            <td>{{@report.reportInfo.sampleInformation.age}}</td>
+            <td>{{@report.reportInfo.sampleInformation.relation}}</td>
+            <td>{{@report.reportInfo.sampleInformation.type}}</td>
+            <td>{{@report.reportInfo.sampleInformation.inspectionAgency}}</td>
+            <td>{{@report.reportInfo.sampleInformation.inspectionPersonnel}}</td>
+            <td>{{@report.reportInfo.sampleInformation.inspectionDate}}</td>
+            <td>{{@report.reportInfo.sampleInformation.number}}</td>
+        </tr>
+        <!--  -->
+        <tr>
+            <th colspan="9">疾病表型报告</th>
+        </tr>
+        <tr>
+            <td>先症者</td>
+            <td colspan="8" class="td-left">{{@report.reportInfo.diseasePhenotype.proband}}</td>
+        </tr>
+        <tr>
+            <td>发症者</td>
+            <td colspan="8" class="td-left">{{@report.reportInfo.diseasePhenotype.diseased}}</td>
+        </tr>
+        <tr>
+            <td>母系</td>
+            <td colspan="8" class="td-left">{{@report.reportInfo.diseasePhenotype.maternal}}</td>
+        </tr>
+        <tr>
+            <td>父系</td>
+            <td colspan="8" class="td-left">{{@report.reportInfo.diseasePhenotype.paternal}}</td>
+        </tr>
+        <!--  -->
+        <tr>
+            <th colspan="9">测序分析流程</th>
+        </tr>
+        <tr>
+            <td>检测方法</td>
+            <td colspan="8" class="td-left">{{@report.reportInfo.sequencingAnalysis.detectionMethod}}</td>
+        </tr>
+        <tr>
+            <td>分析流程</td>
+            <td colspan="8" class="td-left">{{@report.reportInfo.sequencingAnalysis.analysis}}</td>
+        </tr>
+        <!--  -->
+        <tr>
+            <th colspan="9">分析结果</th>
+        </tr>
+        <tr>
+            <td colspan="9" class="td-left">
+                <div>◆{{@report.reportInfo.analysisResult.quality}}</div>
+                <div>◆{{@report.reportInfo.analysisResult.general}}</div>
+                <!-- cnv -->
+                <div class="cnv-content" ms-for="($index, cnv) in @report.reportInfo.analysisResult.cnv">
+                    <input type="checkbox"  ms-attr="{id: cnv.descript + $index}" />
+                    <label ms-on-click="@operationItem(cnv, $index, 1)" ms-attr="{for: cnv.descript + $index}" class="report-checkbox">
+                        ◆{{cnv.descript}}
+                    </label>
+
+                    <p ms-for="($index, img) in cnv.imgList" class="cnv-img">
+                        <img ms-attr="{src: img}" alt="基因" />
+                    </p>
+                </div>
+
+                <!-- snv table -->
+                <table class="snv-table">
+                    <tr>
+                        <th>操作</th>
+                        <th>基因</th>
+                        <th>染色体位置</th>
+                        <th>基因突变信息</th>
+                        <th>合子类型</th>
+                        <th>疾病名称</th>
+                        <th>遗传模式</th>
+                    </tr>
+                    <tr ms-for="($index,data) in @report.reportInfo.analysisResult.snv">
+                        <td>
+                            <input type="checkbox"  ms-attr="{id: $index}"/>
+                            <label ms-on-click="@operationItem(data, $index)" class="snv-lable" ms-attr="{for: $index}" class="report-checkbox"></label>
+                        </td>
+                        <td>
+                            {{data.gene}}
+                        </td>
+                        <td>
+                            {{data.chromosomalLocation}}
+                        </td>
+                        <td>
+                            {{data.mutationInfo}}
+                        </td>
+                        <td>
+                            {{data.zygoteType}}
+                        </td>
+                        <td>
+                            {{data.diseaseName}}
+                        </td>
+                        <td>
+                            {{data.geneticModel}}
+                        </td>
+                    </tr>
+                </table>
+
+                <div>◆{{@report.reportInfo.analysisResult.othercomment}}</div>
+            </td>
+        </tr>
+
+        <!--  -->
+        <tr>
+            <th colspan="9">结论</th>
+        </tr>
+        <tr>
+            <td colspan="9" ms-visible="!@showConclusion">
+                <div  class="conclusion-cnv-panel" ms-class="[ (@cnvLen > 2 && @snvLen > 2) && 'conclusion-cnv']">
+                    <div class="conclusion-content" ms-for="(key,value) in @cnv">
+                        <input type="checkbox" ms-attr="{id: value + key}" />
+                        <label class="conclusion-checkbox" ms-on-click="@selectedConclusion(value, 'cnv', key)" ms-attr="{for: value + key}">
+
+                                {{value.disease_description}}<br/>
+
+                                {{value.disease_inheritance_mode}}<br/>
+
+                                {{value.gene_description}}<br/>
+
+                                {{value.mutation_description}}<br/>
+
+                                {{value.disease_management}}<br/>
+                        </label>
+                    </div>
+                </div>
+                <div class="conclusion-snv-panel">
+                    <div class="conclusion-content" ms-for="(key,value) in @snv">
+                        <input type="checkbox" ms-attr="{id: value.disease_description + key}" />
+                        <label class="conclusion-checkbox" ms-on-click="@selectedConclusion(value, 'snv', key)" ms-attr="{for: value.disease_description + key}">
+                                {{value.disease_description}}<br/>
+
+                                {{value.disease_inheritance_mode}}<br/>
+
+                                {{value.gene_description}}<br/>
+
+                                {{value.mutation_description}}<br/>
+
+                                {{value.disease_management}}<br/>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col s4 m2 confirm-conclusion" ms-if="@cnvLen > 2 || @snvLen > 2" ms-on-click="@confirmConclusion">
+                    <a class="waves-effect waves-light btn blue conclusion-btn">确认所选结论</a>
+                </div>
+            </td>
+
+            <td colspan="9" ms-visible="@showConclusion">
+                <div class="conclusion-result">
+                    <div class="conclusion-result-item" ms-for="(key,value) in @conclusion">
+                        <div ms-for="(keyClild,valueClicd) in value">
+                            <textarea class="item-prototype" ms-duplex="value[keyClild]" ms-if="keyClild !== 'seleted'"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!--  -->
+        <tr>
+            <th colspan="9">参考文献</th>
+        </tr>
+        <tr>
+            <td colspan="9" class="td-left">
+                <div ms-for="reference in @report.reportInfo.references">
+                    {{reference}}
+                </div>
+            </td>
+        </tr>
+
+        <!--  -->
+        <tr>
+            <th colspan="9">声明</th>
+        </tr>
+        <tr>
+            <td colspan="9" class="td-left">
+                {{@report.reportInfo.statement}}
+            </td>
+        </tr>
+    </table>
+
+    <div class="report-info-bottom">
+        <p class="report-importent">
+            {{@report.reportCompany}}<br/>
+            {{@report.reportDate}}
+        </p>
+    </div>
+</div>
+<!-- report -->
+
+<footer class="page-footer indigo">
+    <div class="footer-copyright indigo">
+        <div class="container center">
+            © Copyright 2016 Euler genomics
+        </div>
+    </div>
+</footer>
+<!--/ Footer -->
+
+
+
+<!-- Jquery Lib -->
+<script src="js/jquery-2.2.1.min.js"></script>
+
+<!-- Avalonjs -->
+<script src="js/avalon.min.js"></script>
+
+<script src="js/report.js"></script>
+
+<!-- Jquery Easing -->
+<script src="js/jquery.easing.1.3.js"></script>
+
+<!-- Jquery Appear -->
+<script src="js/jquery.appear.js"></script>
+
+<!-- Materialize Lib -->
+<script src="js/materialize.js"></script>
+
+<!-- Fotorama -->
+<script src="library/fotorama/fotorama.js"></script>
+
+<!-- Swiper Slider -->
+<script src="library/swiper/js/swiper.min.js"></script>
+<script src="library/swiper/js/swiper.jquery.min.js"></script>
+
+<!-- Fancybox -->
+<script src="library/fancybox/jquery.fancybox.js"></script>
+
+<!-- Lazyload -->
+<script src="js/jquery.lazyload.js"></script>
+
+<!-- WOW -->
+<script src="js/wow.min.js"></script>
+
+<!-- Counter -->
+<script src="js/jquery.countTo.js"></script>
+
+<!-- Countdown -->
+<script src="js/jquery.countdown.min.js"></script>
+
+<!-- Masonry Lib -->
+<script src="js/isotope.pkgd.min.js"></script>
+
+<!-- Images Loaded -->
+<script src="js/imagesloaded.pkgd.min.js"></script>
+
+<!-- Pie Chart -->
+<script src="js/jquery.easypiechart.min.js"></script>
+
+
+<!-- Custom JS -->
+<script src="js/custom.js"></script>
+
+
+</body>
+</html>
