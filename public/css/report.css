@@ -1,0 +1,166 @@
+.report {
+    width: 90%;
+    margin: 0 auto;
+    font-family: arial,"Microsoft YaHei",tahoma,"Hiragino Sans GB","\5b8b\4f53",sans-serif;
+}
+
+.report p{
+    color: #000 !important;
+}
+
+.report-title {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.report-importent{
+    font-size: 16px !important;
+    font-weight: bold !important;
+    text-align: right;
+}
+
+.company-name {
+    font-size: 16px !important;
+    font-weight: bold !important;
+}
+
+.report-table, th, td{
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+.report-table th{
+    background-color: #daeef3;
+    font-size: 20px;
+}
+
+
+.td-left {
+    text-align: left;
+}
+
+.report-info-bottom {
+    padding: 2rem 0;
+    line-height: 3rem;
+    margin-top: 2rem;
+}
+
+
+@media only screen and (min-width: 993px) {
+    .report {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .report {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+[type="checkbox"]+label:before {
+    left: 5%;
+}
+
+[type="checkbox"]+.snv-lable:before {
+    top: 6px;
+}
+
+[type="checkbox"]+.conclusion-checkbox:before {
+    top: 40%;
+    left: 0;
+}
+
+
+[type="checkbox"]:checked+label:before {
+    left: 5%;
+}
+
+[type="checkbox"]:checked+.snv-lable:before {
+    top: 6px;
+}
+
+[type="checkbox"]:checked+.conclusion-checkbox:before {
+    top: 40%;
+    left: 0;
+}
+
+
+.report-checkbox {
+    height: 100% !important;
+    display: block !important;
+    padding-left: 10% !important;
+    color: #000 !important;
+}
+
+.cnv-content {
+    margin-top: 2rem;
+}
+
+.cnv-img img {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.snv-table {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.snv-table th{
+    background-color: #dbe5f0;
+}
+
+.conclusion-cnv {
+    border-bottom: 1px solid #ca3a40;
+}
+
+.conclusion-content {
+    text-align: left;
+    border-bottom: 1px dashed #3da299;
+}
+
+.conclusion-checkbox {
+    height: 100% !important;
+    display: block !important;
+    color: #000 !important;
+}
+
+.conclusion-cnv-panel .conclusion-content:last-child {
+    border-bottom: none;
+}
+
+.conclusion-snv-panel .conclusion-content:last-child {
+    border-bottom: none;
+}
+
+.confirm-conclusion {
+    border-top: 1px solid #ca3a40;
+    padding-top: 2rem;
+}
+
+.conclusion-result {
+    text-align: left;
+}
+
+.conclusion-result-item {
+    border-bottom: 1px dashed #3da299;
+    padding-top: 10px;
+}
+
+.conclusion-result .conclusion-result-item:last-child {
+    border-bottom: none;
+}
+
+
+.conclusion-btn {
+    font-size: 16px;
+}
+
+.item-prototype {
+    border: none;
+    resize : none;
+}
