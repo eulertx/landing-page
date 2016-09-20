@@ -105,9 +105,17 @@
     max-width: 90%;
 }
 
+.header-content{
+    overflow: hidden;
+}
+
 .snv-table {
     width: 90%;
-    margin: 10px auto;
+    margin: 10px 0;
+}
+
+option:disabled {
+    background-color: #ccc7c7;
 }
 
 .snv-table th{
@@ -163,4 +171,28 @@
 .item-prototype {
     border: none;
     resize : none;
+}
+
+/*2.0 改版*/
+.table-header {
+    width: 90%;
+    overflow: hidden;
+    margin: 1rem auto;
+}
+
+.header-select {
+    float: left;
+    width: 90%;
+    border: 1px solid #a99e9e;
+}
+
+.header-opration {
+    float: right;
+    width: 10%;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.header-opration .remove-style {
+    margin-left: 20px;
 }

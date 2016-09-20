@@ -28,11 +28,11 @@
  ***********************************************************************************/
 body {
     background-color: #f1f2f2;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto",sans-serif,"Segoe UI","Microsoft YaHei",tahoma,"Hiragino Sans GB","\5b8b\4f53";
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto",sans-serif,"Segoe UI","Microsoft YaHei",tahoma,"Hiragino Sans GB","\5b8b\4f53";
     font-weight: 300;
     text-transform: uppercase;
     color: #2f343b;
@@ -384,17 +384,13 @@ header nav .brand-logo {
 
 }
 
-header nav .brand-logo:hover {
-    opacity: .7;
-}
-
 header nav ul li:hover, header nav ul li.active {
     background-color: transparent;
 }
 
 header nav ul li a {
-    font-size: 13px;
-    padding: 14px 14px 10px;
+    font-size: 16px;
+    padding: 13px 14px 3px;
     text-transform: uppercase;
     line-height: 3em;
     border-color: #ff4081;
@@ -419,7 +415,7 @@ header nav ul li.active a {
 }
 
 header nav .dropdown-content {
-    margin-top: 7px;
+    margin-top: 20px;
 }
 
 header nav .dropdown-content li {
@@ -447,7 +443,7 @@ header nav .nav-wrapper i, header nav a.button-collapse, header nav a.button-col
 
 header nav i.right {
     font-size: 16px;
-    line-height: 2.5em;
+    line-height: 3em;
     margin-left: 5px;
 }
 
@@ -529,7 +525,7 @@ header .navbar-fixed.sticky {
 }
 
 header .navbar-fixed.sticky nav {
-    height: 48px;
+    height: 58px;
     line-height: 45px;
 }
 

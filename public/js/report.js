@@ -4,7 +4,10 @@ var vm = avalon.define({
     cnvLen: 0,
     snv: {},
     snvLen: 0,
+    variants: {},
+    variantsTables: [],
     conclusion: {},
+    tableChange: undefined,
     showConclusion: false,
     report: {
         companyInfo: {},
@@ -31,13 +34,85 @@ var vm = avalon.define({
                 console.info('fail');
             }
         });
+    },
 
+    // 添加select variants table
+    addVariantsTable: function() {
+        if (variantsTables.length < variants.length) {
+            variantsTables.push(variants);
+            vm.variantsTables = variantsTables;
+            initJson();
+        }
+    },
+
+    // 移除select variants table
+    removeVariantsTable: function($index) {
+        if (variantsTables.length > 1) {
+            var remove = confirm("移除表格的同时也会移除表格对应的所选结论，确认移除么？");
+            if (remove) {
+
+                // 移除所选表格
+                variantsTables.splice($index, 1);
+                vm.variantsTables = variantsTables;
+                initJson();
+
+                //移除未确认的结论
+                var data = snv;
+
+                for (var key in data) {
+                    var keyList = key.split('-');
+                    if (keyList[0] == $index) {
+                        delete data[key];
+                        continue;
+                    }
+                }
+                vm.snv = data;
+                vm.snvLen = JSON.stringify(data).length;
+            } else {
+                return;
+            }
+        }
+    },
+
+    // 改变tables选项时触发
+    changeVariant: function($index, $event) {
+        var elValue = $event.currentTarget.value;
+        var valueList = elValue.split('-');
+
+        // 判断当前表格第几个被选中
+        var tableIndex = valueList[0];
+        var variantIndex = valueList[1];
+
+        var i,
+            currentTable = variantsTables[tableIndex],
+            variantLen = currentTable.length;
+
+        for (i = 0 ; i < variantLen; i++) {
+            var currentItem = currentTable[i];
+
+            if (i == variantIndex) {
+                currentItem.isShow = true;
+            } else {
+                currentItem.isShow = false;
+            }
+        }
+
+        vm.variantsTables = variantsTables;
+    },
+
+    // 展示是否展示相应表格
+    showItem: function(item) {
+        if (item.isShow == 'true' || (typeof item.isShow == 'boolean' && item.isShow)) {
+            return true;
+        } else {
+            return false;
+        }
     },
 
     // 操作cnv snv决定结论如何展示
     operationItem: function(item, $index, type) {
         item.seleted = !item.seleted;
-        var data = type ? cnv : snv;
+        var data = snv;
         if (item.seleted) {
             data[$index] = {
                 disease_description: item.disease_description,
@@ -50,13 +125,8 @@ var vm = avalon.define({
             delete data[$index];
         }
 
-        if (type) {
-            vm.cnv = data;
-            vm.cnvLen = JSON.stringify(data).length;
-        } else {
-            vm.snv = data;
-            vm.snvLen = JSON.stringify(data).length;
-        }
+        vm.snv = data;
+        vm.snvLen = JSON.stringify(data).length;
     },
 
     // 所选结论选择
@@ -82,7 +152,7 @@ var cnv = {};
 var conclusion = {};
 // vm.init();
 
-vm.report = {
+var report = {
     "title": "遗传测序分析报告",
     "reprotNumber": "PUSHC-20160728-01",
     "reportCompany": "北京优乐复生科技有限责任公司",
@@ -124,58 +194,111 @@ vm.report = {
         "analysisResult": {
             "quality":"数据质量合格。",
             "general":"被检测人员SNP 分布率正常。有亲缘关系。",
-            "cnv": [
-                    {
-                        "descript": "被检测人员携带10 号染色体区段扩增。位置为10:102921841-103415600 (GRCh37)。该CNV 为父系遗传4.",
-                        "disease_description": "手足裂畸形(Split-Hand/Foot Malformation, SHFM)是一种严重影响患者惊喜活动的先天性肢端畸形。",
-                        "disease_inheritance_mode": "常染色体显性",
-                        "gene_description": "成纤维细胞生长因子受体3(fibroblast growth factor receptor 3, FGFR3)基因",
-                        "mutation_description": "经分析，在被检测人基因组中检测到父源10q24.32 基因组扩增。该突变OMIM 报道致splithand/foot malformation（SHFM3）（OMIM #：246560）。另外，在被检测人基因组中检测到FGFR3 罕见突变Thr452Met。该突变在东亚人群中及in house 数据库中占比约1/1000。考虑digenic致病，以10q24.32 区域重复扩增突变为主。",
-                        "disease_management": "无",
-                        "imgList": [
-                            "./img/bnner1.jpg",
-                            "./img/bnner1.jpg"
-                        ]
-                   },
-                   {
-                       "descript": "被检测人员携带10 号染色体区段扩增。位置为10:102921841-103415600 (GRCh37)。该CNV 为父系遗传4.",
-                       "disease_description": "手足裂畸形(Split-Hand/Foot Malformation, SHFM)是一种严重影响患者惊喜活动的先天性肢端畸形。",
-                       "disease_inheritance_mode": "常染色体显性",
-                       "gene_description": "成纤维细胞生长因子受体3(fibroblast growth factor receptor 3, FGFR3)基因",
-                       "mutation_description": "经分析，在被检测人基因组中检测到父源10q24.32 基因组扩增。该突变OMIM 报道致splithand/foot malformation（SHFM3）（OMIM #：246560）。另外，在被检测人基因组中检测到FGFR3 罕见突变Thr452Met。该突变在东亚人群中及in house 数据库中占比约1/1000。考虑digenic致病，以10q24.32 区域重复扩增突变为主。",
-                       "disease_management": "无",
-                       "imgList": [
-                            "./img/bnner1.jpg",
-                            "./img/bnner1.jpg"
-                       ]
-                  }
-             ],
-            "snv": [
-                    {
-                      "gene": "ABCG8",
-                      "chromosomalLocation": "chr2:44079831",
-                      "mutationInfo": "NM_022437:exon6",
-                      "zygoteType": "HET",
-                      "diseaseName": "Sitosterolemia",
-                      "geneticModel": "AR",
-                      "disease_description": "c手足裂畸形(Split-Hand/Foot Malformation, SHFM)是一种严重影响患者惊喜活动的先天性肢端畸形。",
-                      "disease_inheritance_mode": "常染色体显性",
-                      "gene_description": "成纤维细胞生长因子受体3(fibroblast growth factor receptor 3, FGFR3)基因",
-                      "mutation_description": "经分析，在被检测人基因组中检测到父源10q24.32 基因组扩增。该突变OMIM 报道致splithand/foot malformation（SHFM3）（OMIM #：246560）。另外，在被检测人基因组中检测到FGFR3 罕见突变Thr452Met。该突变在东亚人群中及in house 数据库中占比约1/1000。考虑digenic致病，以10q24.32 区域重复扩增突变为主。",
-                      "disease_management": "无"
-                  },
-                  {
-                    "gene": "ABCG8",
-                    "chromosomalLocation": "chr2:44079831",
-                    "mutationInfo": "NM_022437:exon6",
-                    "zygoteType": "HET",
-                    "diseaseName": "Sitosterolemia",
-                    "geneticModel": "AR",
-                    "disease_description": "a手足裂畸形(Split-Hand/Foot Malformation, SHFM)是一种严重影响患者惊喜活动的先天性肢端畸形。",
-                    "disease_inheritance_mode": "常染色体显性",
-                    "gene_description": "成纤维细胞生长因子受体3(fibroblast growth factor receptor 3, FGFR3)基因",
-                    "mutation_description": "经分析，在被检测人基因组中检测到父源10q24.32 基因组扩增。该突变OMIM 报道致splithand/foot malformation（SHFM3）（OMIM #：246560）。另外，在被检测人基因组中检测到FGFR3 罕见突变Thr452Met。该突变在东亚人群中及in house 数据库中占比约1/1000。考虑digenic致病，以10q24.32 区域重复扩增突变为主。",
-                    "disease_management": "无"
+            "variants": [
+                {
+                    "isShow": "true",
+                    "description": "表一，优先级最高",
+                    "variant": [
+                        {
+                            "gene": "一一一一一一一ABCG8",
+                            "chromosomalLocation": "chr2:44079831",
+                            "mutationInfo": "NM_022437:exon6",
+                            "HGVScDNA": "",
+                            "HGVSProtein": "",
+                            "frequency": "",
+                            "zygoteType": "HET",
+                            "diseaseName": "Sitosterolemia",
+                            "geneticModel": "AR",
+                            "imgList": [
+                                "./img/bnner1.jpg",
+                                "./img/bnner1.jpg"
+                            ],
+                            "disease_description": "c手足裂畸形(Split-Hand/Foot Malformation, SHFM)是一种严重影响患者惊喜活动的先天性肢端畸形。",
+                            "disease_inheritance_mode": "常染色体显性",
+                            "gene_description": "成纤维细胞生长因子受体3(fibroblast growth factor receptor 3, FGFR3)基因",
+                            "mutation_description": "经分析，在被检测人基因组中检测到父源10q24.32 基因组扩增。该突变OMIM 报道致splithand/foot malformation（SHFM3）（OMIM #：246560）。另外，在被检测人基因组中检测到FGFR3 罕见突变Thr452Met。该突变在东亚人群中及in house 数据库中占比约1/1000。考虑digenic致病，以10q24.32 区域重复扩增突变为主。",
+                            "disease_management": "无"
+                        }
+                    ]
+                },
+                {
+                    "isShow": "false",
+                    "description": "表二，优先级中等",
+                    "variant": [
+                        {
+                            "gene": "二二二二二二二二ABCG8",
+                            "chromosomalLocation": "chr2:44079831",
+                            "mutationInfo": "NM_022437:exon6",
+                            "HGVScDNA": "",
+                            "HGVSProtein": "",
+                            "frequency": "",
+                            "zygoteType": "HET",
+                            "diseaseName": "Sitosterolemia",
+                            "geneticModel": "AR",
+                            "imgList": [
+                                "./img/bnner1.jpg",
+                                "./img/bnner1.jpg"
+                            ],
+                            "disease_description": "c手足裂畸形(Split-Hand/Foot Malformation, SHFM)是一种严重影响患者惊喜活动的先天性肢端畸形。",
+                            "disease_inheritance_mode": "常染色体显性",
+                            "gene_description": "成纤维细胞生长因子受体3(fibroblast growth factor receptor 3, FGFR3)基因",
+                            "mutation_description": "经分析，在被检测人基因组中检测到父源10q24.32 基因组扩增。该突变OMIM 报道致splithand/foot malformation（SHFM3）（OMIM #：246560）。另外，在被检测人基因组中检测到FGFR3 罕见突变Thr452Met。该突变在东亚人群中及in house 数据库中占比约1/1000。考虑digenic致病，以10q24.32 区域重复扩增突变为主。",
+                            "disease_management": "无"
+                        }
+                    ]
+                },
+
+                {
+                    "isShow": "false",
+                    "description": "表3，优先级中等",
+                    "variant": [
+                        {
+                            "gene": "三三三三三三三三三三三三三三ABCG8",
+                            "chromosomalLocation": "chr2:44079831",
+                            "mutationInfo": "NM_022437:exon6",
+                            "HGVScDNA": "",
+                            "HGVSProtein": "",
+                            "frequency": "",
+                            "zygoteType": "HET",
+                            "diseaseName": "Sitosterolemia",
+                            "geneticModel": "AR",
+                            "imgList": [
+                                "./img/bnner1.jpg",
+                                "./img/bnner1.jpg"
+                            ],
+                            "disease_description": "c手足裂畸形(Split-Hand/Foot Malformation, SHFM)是一种严重影响患者惊喜活动的先天性肢端畸形。",
+                            "disease_inheritance_mode": "常染色体显性",
+                            "gene_description": "成纤维细胞生长因子受体3(fibroblast growth factor receptor 3, FGFR3)基因",
+                            "mutation_description": "经分析，在被检测人基因组中检测到父源10q24.32 基因组扩增。该突变OMIM 报道致splithand/foot malformation（SHFM3）（OMIM #：246560）。另外，在被检测人基因组中检测到FGFR3 罕见突变Thr452Met。该突变在东亚人群中及in house 数据库中占比约1/1000。考虑digenic致病，以10q24.32 区域重复扩增突变为主。",
+                            "disease_management": "无"
+                        }
+                    ]
+                },
+                {
+                    "isShow": "false",
+                    "description": "表4，优先级中等",
+                    "variant": [
+                        {
+                            "gene": "四四四四四四四四四四四四四四四四四ABCG8",
+                            "chromosomalLocation": "chr2:44079831",
+                            "mutationInfo": "NM_022437:exon6",
+                            "HGVScDNA": "",
+                            "HGVSProtein": "",
+                            "frequency": "",
+                            "zygoteType": "HET",
+                            "diseaseName": "Sitosterolemia",
+                            "geneticModel": "AR",
+                            "imgList": [
+                                "./img/bnner1.jpg",
+                                "./img/bnner1.jpg"
+                            ],
+                            "disease_description": "c手足裂畸形(Split-Hand/Foot Malformation, SHFM)是一种严重影响患者惊喜活动的先天性肢端畸形。",
+                            "disease_inheritance_mode": "常染色体显性",
+                            "gene_description": "成纤维细胞生长因子受体3(fibroblast growth factor receptor 3, FGFR3)基因",
+                            "mutation_description": "经分析，在被检测人基因组中检测到父源10q24.32 基因组扩增。该突变OMIM 报道致splithand/foot malformation（SHFM3）（OMIM #：246560）。另外，在被检测人基因组中检测到FGFR3 罕见突变Thr452Met。该突变在东亚人群中及in house 数据库中占比约1/1000。考虑digenic致病，以10q24.32 区域重复扩增突变为主。",
+                            "disease_management": "无"
+                        }
+                    ]
                 }
             ],
             "othercomment":"被检测人员分析未见其余可能致病变异。"
@@ -184,4 +307,45 @@ vm.report = {
         "references": ["略"],
         "statement": "本报告只对送检样本负责。受限于科学发展的局限，本报告不能排除被检测人患其它类型疾病的可能性。本中心对以上检测结果保留最终解释权,如有疑义,请在收到结果后的7 个工作日内与我们联系。以上结论均为实验室检测数据,仅用于突变检测之目的,不代表最终诊断结果,仅供临床参考。数据解读规则参考美国医学遗传学和基因组学学院(American College of Medical Genetics and Genomics,ACMG)相关指南。变异命名参照HGVS 建议的规则给出(http://www.hgvs.org/mutnomen/)。"
     }
+};
+
+var variants = [];
+
+var variantsTables = [];
+
+var selectVariantsTables = [];
+
+processReportData(report);
+
+vm.report = report;
+
+
+initJson();
+
+
+// init clear json
+function initJson() {
+
+    variants = JSON.parse(JSON.stringify(vm.$model.variants));
+
+    variantsTables = JSON.parse(JSON.stringify(vm.$model.variantsTables));
+}
+
+// 初始化返回数据
+function processReportData (response) {
+
+    report = response || report;
+
+    variants = report.reportInfo.analysisResult.variants;
+
+    // 赋值表项数据
+    vm.variants = variants;
+
+    // 赋值可选择表数据
+    variantsTables.push(variants);
+
+    // 初始化当前选中
+    selectVariantsTables.push(0);
+
+    vm.variantsTables = variantsTables;
 }
