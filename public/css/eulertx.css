@@ -5,12 +5,70 @@
  * Copyright (c) 2016-08-31
  */
 
+/*
+ * blog
+ */
+
+ .blog-panel {
+     font-family: "Segoe UI","Microsoft YaHei",tahoma,"Hiragino Sans GB","\5b8b\4f53",sans-serif;
+ }
+
+.blog-panel p{
+    text-indent: 2em;
+    font-size: 16px;
+    font-family: "Segoe UI","Microsoft YaHei",tahoma,"Hiragino Sans GB","\5b8b\4f53",sans-serif;
+}
+
+.blog-panel img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+}
+
+.blog-title {
+    text-align: center;
+}
+
+.blog-info {
+    text-align: right;
+    color: #909090;
+    border-bottom: 1px solid #ccc
+}
+
+.blog-content {
+    margin-bottom: 2rem;
+}
+
+.blog-content span {
+    display: block;
+    color: #5c5c5c;
+    font-size: 16px;
+    font-family: "Segoe UI","Microsoft YaHei",tahoma,"Hiragino Sans GB","\5b8b\4f53",sans-serif;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    font-weight: 400;
+}
+
+.blog-content strong {
+    font-weight: bold;
+    display: block;
+    font-size: 5px;
+    font-family: "Segoe UI","Microsoft YaHei",tahoma,"Hiragino Sans GB","\5b8b\4f53",sans-serif;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.line {
+    width: 50px;
+    height: 4px;
+    background-color: #24252f;
+}
 
 /*
  * service
  */
 .service-content {
-    font-family: arial,"Microsoft YaHei",tahoma,"Hiragino Sans GB","\5b8b\4f53",sans-serif;
+    font-family: "Segoe UI","Microsoft YaHei",tahoma,"Hiragino Sans GB","\5b8b\4f53",sans-serif;
 }
 
 .service-title {
@@ -20,7 +78,7 @@
 }
 
 .item-content {
-    font-family: arial,"Microsoft YaHei",tahoma,"Hiragino Sans GB","\5b8b\4f53",sans-serif;
+    font-family: "Segoe UI","Microsoft YaHei",tahoma,"Hiragino Sans GB","\5b8b\4f53",sans-serif;
     text-align: left;
     text-indent: 2em;
     padding: 1rem;
@@ -172,4 +230,247 @@
         overflow: hidden;
         padding: 1rem;
     }
+}
+
+/*
+ * about our
+ */
+
+.about-swiper {
+    z-index: -1;
+}
+
+.abuout-container {
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.abuout-container img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    opacity: 1;
+}
+
+.abuout-container {
+    font-family: "Segoe UI","Microsoft YaHei",tahoma,"Hiragino Sans GB","\5b8b\4f53",sans-serif;
+}
+
+.abuout-container p {
+    font-size: 16px;
+    font-family: "Segoe UI","Microsoft YaHei",tahoma,"Hiragino Sans GB","\5b8b\4f53",sans-serif;
+}
+
+.about-company {
+    text-indent: 2em;
+}
+
+.abuout-container .company-intro {
+    margin-bottom: 0;
+}
+
+/*.our-advantages {
+    margin-top: 20rem;
+}*/
+
+.advantages-title {
+    overflow: hidden;
+    margin: 0 -2rem;
+}
+
+.advantages-up {
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.advantages-item {
+    float: left;
+    text-align: center;
+    line-height: 2.5em;
+}
+
+.advantages-item-0 {
+    background-color: #37ab2d;
+    color: #fff;
+    width: 40%;
+}
+
+.advantages-item-1 {
+    background-color: #949429;
+    color: #fff;
+    width: 33%;
+}
+
+.advantages-item-2 {
+    width: 27%;
+    color: #fff;
+    background-color: #1e1e8a;
+}
+
+.advantages-item-3 {
+    float: none;
+    margin: 0 auto;
+    width: 60%;
+    color: #fff;
+    background-color: #1919e6;
+}
+
+.about-our-item {
+    background-color: transparent !important;
+}
+
+.advantages-content {
+    overflow: hidden;
+}
+
+.our-experience {
+    overflow: hidden;
+}
+
+.experience{
+    text-align: center;
+    overflow: hidden;
+}
+
+.experience-content {
+    max-width: 100%;
+    text-align: center;
+}
+
+.experience-content img{
+    width: 60%;
+    margin-bottom: 2rem;
+}
+
+.item-content {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.item-left {
+    float: left;
+    width: 50%;
+    padding: 2rem;
+}
+
+.item-right {
+    float: right;
+    width: 50%;
+    padding: 2rem;
+}
+
+.advantages-content img{
+    background-color: #fff;
+}
+
+.experience-item {
+    float: left;
+    width: 33.33%;
+    padding: 0 10px;
+}
+
+.scheme-content {
+    overflow: hidden;
+}
+
+/* service mobile*/
+@media only screen and (max-width: 601px){
+
+    .item-left  {
+        width: 100%;
+    }
+    .item-right {
+        width: 100%;
+    }
+
+    .advantages-item-0, .advantages-item-1, .advantages-item-2, .advantages-item-3 {
+        width: 100%;
+    }
+
+    .advantages-up {
+        margin-bottom: 0;
+    }
+
+    .item-content {
+        width: 100%;
+        padding: 0;
+    }
+
+    .experience-item {
+        padding: 0;
+    }
+
+    .experience-content img{
+        width: 100%;
+    }
+
+    .construction-content {
+        margin: 15rem 0 30rem !important;
+    }
+
+    .construction-img {
+        width: 100%;
+    }
+}
+
+.construction-content {
+    margin:27rem 0;
+}
+
+.construction-descript {
+    color: #fff !important;
+    font-size: 20px !important;
+    font-weight: normal;
+}
+
+.construction-img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+/*全外显子测序*/
+.exome-sequencing {
+    padding: 30px 0 10px 0;
+}
+
+.exome-sequencing ul li {
+    line-height: 2em;
+}
+
+.exome-sequencing h5{
+    line-height: 190%;
+    margin: 20px -2rem;
+    padding-left: 2rem;
+    border-left: 5px solid #e40000;
+}
+
+.exome-sequencing h4 {
+    margin: 30px 0;
+    line-height: 100%;
+    text-align: center;
+    border-left: 5px solid #0ea385;
+    border-right: 5px solid #0ea385;
+}
+
+.exome-sequencing img {
+    max-width: 100%;
+}
+
+.exome-sequencing p {
+    text-indent: 2em;
+    line-height: 2em;
+}
+
+.service-content {
+    padding: 0 2rem;
+}
+
+.mrx {
+    margin-right: 10px;
+}
+
+.sub-ul {
+    padding-left: 2rem;
 }
