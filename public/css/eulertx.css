@@ -430,23 +430,26 @@
     margin-bottom: 2rem;
 }
 
-/*全外显子测序*/
-.exome-sequencing {
+/*科技服务*/
+.service-sequencing {
     padding: 30px 0 10px 0;
 }
 
-.exome-sequencing ul li {
+
+.service-sequencing ul li {
     line-height: 2em;
 }
 
-.exome-sequencing h5{
+
+.service-sequencing h5{
     line-height: 190%;
     margin: 20px -2rem;
     padding-left: 2rem;
     border-left: 5px solid #e40000;
+    font-weight: bold;
 }
 
-.exome-sequencing h4 {
+.service-sequencing h4 {
     margin: 30px 0;
     line-height: 100%;
     text-align: center;
@@ -454,17 +457,23 @@
     border-right: 5px solid #0ea385;
 }
 
-.exome-sequencing img {
+.service-sequencing img {
     max-width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
-.exome-sequencing p {
+.service-sequencing p {
     text-indent: 2em;
     line-height: 2em;
 }
 
 .service-content {
     padding: 0 2rem;
+}
+
+.service-content >ul,.service-content >p{
+    margin-left: 5px;
 }
 
 .mrx {

@@ -6,7 +6,7 @@
 <!--[if gt IE 9]><!--><html class="no-js" lang="en-US"><!--<![endif]-->
 <!-- the "no-js" class is for Modernizr. -->
 <head>
-  <title>优乐复生</title>
+  <title>靶向捕获测序</title>
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
@@ -54,9 +54,12 @@
   <link type="text/css" rel="stylesheet" href="css/social-btn.css" media="screen,projection"/>
   <link type="text/css" rel="stylesheet" href="css/custom.css" media="screen,projection"/>
 
-  <!-- eulertx by develop -->
+  <!-- by develop -->
   <link type="text/css" rel="stylesheet" href="css/eulertx.css" media="screen,projection"/>
   <link type="text/css" rel="stylesheet" href="css/menu.css" media="screen,projection"/>
+
+  <!-- YOUR STYLE -->
+  <link type="text/css" rel="stylesheet" href="#">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -92,109 +95,107 @@
   </header>
   <!--/ Header -->
 
-  <!-- Service Container -->
+  <!-- About Container -->
   <div class="section">
     <div class="container">
       <div class="row">
         <div class="col s12 m12">
           <!-- Page Container -->
-          <div class="page-container">
+          <div class="page-container service-sequencing">
+            <h4>靶向捕获测序</h4>
             <div class="row">
               <div class="col s12 m12">
-                <!-- Service content -->
-                <div class="service-content" ms-controller="service">
-                    <!-- 疾病简介 -->
-                    <div class="service-title service-title-size" ms-text="@product.name"></div>
-                    <div class="row">
-                        <p ms-if="@product.descript" class="item-content item-example" ms-html="@product.descript"></p>
-                    </div>
-                    <!--/ 疾病简介 -->
+                  <!-- Page Content -->
+                  <div class="service-content">
+                      <p>
+                          靶向捕获测序是通过对目标区域设计特异性捕获的探针，与基因组DNA进行杂交，将目标区域DNA富集后进行高通量测序分析的研究策略。主要针对由体细胞嵌合变异造成的严重遗传疾病。体细胞嵌合变异是指在胚胎发育过程中随机产生的基因突变。体细胞嵌合变异比例较低时，携带者有可能病情较轻，普通测序也无法测得突变，但这类变异一旦嵌入胚系，即可产生携带杂合突变的下一代，病情会更严重。
+                      </p>
+                  </div>
+                  <div class="service-content">
+                      <h5>技术指标</h5>
+                      <ul>
+                          <li><span class="mrx">1.</span>有效测序深度 >1000×；</li>
+                          <li><span class="mrx">2.</span>检测体细胞嵌合突变的丰度低至 0.2%；</li>
+                      </ul>
+                  </div>
+                  <div class="service-content">
+                      <h5>技术优势</h5>
+                      <ul>
+                          <li><span class="mrx">√</span>准确检测单核苷酸多态性位点（SNV）、插入缺失变异（InDel）、嵌合位点（mosic）；</li>
+                          <li><span class="mrx">√</span>针对性强，仅检测临床意义明确的区域；</li>
+                          <li><span class="mrx">√</span>目标区域覆盖度大，检测费用低。</li>
+                      </ul>
+                  </div>
 
-                    <!-- 疾病原因 -->
-                    <div class="service-title service-title-size service-title-center">致病原因</div>
-                    <div class="row">
-                        <img ms-if="@product.causesPic" class="service-img" ms-attr="{src: @product.causesPic}" alt="致病原因"/>
-                    </div>
-                    <!--/ 疾病原因 -->
+                  <div class="service-content">
+                      <h5>测序策略</h5>
+                      <ul>
+                          <li><span class="mrx">✥</span>单碱基突变/寡核苷酸插入缺失相关的遗传病，推荐选择全外显子测序</li>
+                          <li><span class="mrx">✥</span>大规模染色体结构变异/染色体数目异常相关的遗传病，推荐选择低覆盖全基因组测序</li>
+                          <li><span class="mrx">✥</span>体细胞嵌合突变相关的遗传病推荐选择超高深度捕获测序</li>
+                      </ul>
+                      <img class="materialboxed responsive-img" src="img/euler/technology-service/target-capture-1.png" alt="靶向捕获测序" title="靶向捕获测序" />
+                  </div>
 
-                    <!-- 检测流程 -->
-                    <div class="service-title service-title-size service-title-center">检测流程</div>
-                    <div class="row">
-                        <img ms-if="@product.testingFlowPic" class="service-img" ms-attr="{src: @product.testingFlowPic}" alt="检测流程" />
-                    </div>
-                    <!--/ 检测流程 -->
+                  <div class="service-content">
+                      <h5>报告类型</h5>
+                      <ul>
+                          <li><span class="mrx">A类报告：</span>报告疾病已知的致病基因。</li>
+                          <li><span class="mrx">B类报告：</span>报告疾病已知的致病基因和可能与疾病相关的新基因。</li>
+                          <li><span class="mrx">C类报告：</span>报告疾病类型、疾病已知的致病基因和可能与疾病相关的新基因。</li>
+                      </ul>
+                      <img class="materialboxed responsive-img" src="img/euler/technology-service/target-capture-2.png" alt="靶向捕获测序" title="靶向捕获测序" />
+                  </div>
 
-                    <!-- 常见疾病 -->
-                    <div class="service-title service-title-size service-title-center">常见神经系统疾病</div>
-                    <div class="row">
-                        <div class="row-item" ms-class="['item-' + $index]" ms-for="($index,blog) in @product.blogs">
-                            <span class="item-name">{{blog.name}}</span>
-                            <p class="item-content" ms-class="['content-' + $index]" ms-html="blog.descript"></p>
-                        </div>
-                    </div>
-                    <!--/ 常见疾病 -->
-
-                    <!-- 过往案例 -->
-                    <div ms-for="caseItem in @product.cases">
-                        <div class="service-title service-title-size service-title-center">过往案例</div>
-                        <div class="row">
-                            <p class="item-content item-example" ms-html="caseItem.descript"></p>
-                            <img ms-if="caseItem.pic" class="service-img" ms-attr="{src: caseItem.pic}" alt="案列" />
-                        </div>
-                    </div>
-                    <!--/ 经典案例 -->
-
-                    <!-- 问题解答 -->
-                    <div class="service-title service-title-size service-title-center">问题解答</div>
-                    <div class="row">
-                        <ul>
-                            <li ms-for="dialogue in @product.dialogue">
-                                <span class="question-title">Q：</span><span class="question-descript">{{dialogue.question}}</span>
-                                <div class="dialogue">
-                                    <span class="answer-title">A：</span>
-                                    <p class="answer-content" ms-html="dialogue.answer"></p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--/ 问题解答 -->
+                  <!--/ Page Contant -->
               </div>
-              <!--/ Service content -->
-            </div>
           </div>
           <!--/ Page Container -->
         </div>
       </div>
     </div>
   </div>
-  <!--/ Service Me Container -->
+  <!--/ About Container -->
 
   <!-- Footer -->
   <footer class="page-footer indigo">
       <div class="footer-copyright indigo">
           <div class="container center">
-              © Copyright 2016 Euler genomics
+              Copyright © 2010-2016 优乐复生 版权所有 京ICP备 15052141号-1
           </div>
       </div>
   </footer>
   <!--/ Footer -->
 
-  <script src="https://cdn1.lncld.net/static/js/av-min-1.0.0.js"></script>
-
   <!-- Jquery Lib -->
   <script src="js/jquery-2.2.1.min.js"></script>
 
   <script type="text/javascript">
-    // 初始化menu
-    $.get('menu.html', function(data) {
-        $('#navbar-menu').html(data);
-    })
+
+      // 初始化menu
+      $.get('menu.html', function(data) {
+          $('#navbar-menu').html(data);
+      })
+
+      // 初始化canvas
+      var u = navigator.userAgent;
+      var isAndroid =  u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //android终端或者uc浏览器
+      var isIPhone =  u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1; //是否为iPhone或者QQHD浏览器
+      var isMobile = isAndroid || isIPhone;
+
+      var count = 200;
+
+      if (isMobile) {
+          count = 30;
+      }
+      document.write("<s" + "cript type='text/javascript' count='"+ count + "' src='./js/effect.js'></s" + "cript>");
+
+      // 初始化menu相关js
+      document.write("<s" + "cript type='text/javascript' src='./js/menu.js?" + Math.random() + "'></s" + "cript>");
+      document.write("<s" + "cript type='text/javascript' src='./js/materialize.js?" + Math.random() + "'></s" + "cript>");
+
+
   </script>
-
-  <!-- Avalonjs -->
-  <script src="js/avalon.min.js"></script>
-
-  <script src="js/service.js"></script>
 
   <!-- Jquery Easing -->
   <script src="js/jquery.easing.1.3.js"></script>
@@ -204,8 +205,7 @@
 
   <!-- Menu.js && Materialize Lib -->
   <script>
-      document.write("<s" + "cript type='text/javascript' src='./js/menu.js?" + Math.random() + "'></s" + "cript>");
-      document.write("<s" + "cript type='text/javascript' src='./js/materialize.js?" + Math.random() + "'></s" + "cript>");
+
   </script>
 
   <!-- Fotorama -->
