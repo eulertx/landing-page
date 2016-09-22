@@ -5,7 +5,7 @@ $(window).load(function(){
         index: ['index'],
         about: ['about'],
         contact: ['contact'],
-        technology_service: ['service-exome-sequencing','service-target-capture-sequencing','service-data-analysis-sequencing'],
+        technology_service: ['service-exome-sequencing','service-target-capture-sequencing','service-data-analysis-sequencing','service-whole-genome-sequencing'],
         disease_diagnosing: ['diagnosing'],
         disease_screening: ['screening'],
         outreach: ['invite']
