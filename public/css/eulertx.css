@@ -483,3 +483,22 @@
 .sub-ul {
     padding-left: 2rem;
 }
+
+.service-content table {
+    border: 1px solid #afafaf;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.service-content tr {
+    border-bottom: 1px solid #afafaf;
+}
+
+.service-content td,.service-content th {
+    border-left: 1px solid #afafaf;
+    text-align: center;
+}
+
+.service-content th{
+    background-color: #ebebf9;
+}
