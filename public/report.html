@@ -11,7 +11,7 @@
 <html class="no-js" lang="en-US"><!--<![endif]-->
 <!-- the "no-js" class is for Modernizr. -->
 <head>
-    <title>Euler genomic</title>
+    <title>优乐复生 - 检测分析报告</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
@@ -43,8 +43,7 @@
     <!-- MATERIAL ICONS -->
     <!--<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"-->
     <!--rel="stylesheet">-->
-    <link type="text/css" rel="stylesheet" href="https://fonts.css.network/icon?family=Material+Icons"
-          rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://fonts.css.network/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- SWIPER SLIDER -->
     <link type="text/css" rel="stylesheet" href="library/swiper/css/swiper.min.css">
@@ -76,7 +75,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body style="background-color:#fff;">
     <!-- Overlay -->
     <div class="overlay">
         <div class="col s12 m12 center">
@@ -199,7 +198,7 @@
                 <div>◆{{@report.reportInfo.analysisResult.quality}}</div>
                 <div>◆{{@report.reportInfo.analysisResult.general}}</div>
                 <!-- cnv -->
-                <div class="cnv-content" ms-for="($index, cnv) in @report.reportInfo.analysisResult.cnv">
+                <!-- <div class="cnv-content" ms-for="($index, cnv) in @report.reportInfo.analysisResult.cnv">
                     <input type="checkbox"  ms-attr="{id: cnv.descript + $index}" />
                     <label ms-on-click="@operationItem(cnv, $index, 1)" ms-attr="{for: cnv.descript + $index}" class="report-checkbox">
                         ◆{{cnv.descript}}
@@ -208,44 +207,65 @@
                     <p ms-for="($index, img) in cnv.imgList" class="cnv-img">
                         <img ms-attr="{src: img}" alt="基因" />
                     </p>
+                </div> -->
+
+                <div class="table-header" ms-for="($tableIndex,variantsTable) in @variantsTables">
+
+                    <div class="header-content">
+                        <select class="browser-default header-select" ms-on-change="@changeVariant($tableIndex, $event)">
+                            <option ms-for="($index,variants) in variantsTable" ms-attr="{value: $tableIndex + '-' +$index}">{{variants.description}}</option>
+                        </select>
+
+                        <div class="header-opration">
+                            <a class="btn-floating btn-small waves-effect waves-light blue" ms-on-click="@addVariantsTable"><i class="mdi-content-add"></i></a>
+                            <a class="btn-floating btn-small waves-effect waves-light blue remove-style" ms-on-click="@removeVariantsTable($tableIndex)"><i class="mdi-content-remove"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- variant table -->
+                    <table class="snv-table" ms-for="($variantIndex, variants) in variantsTable" ms-if="@showItem(variants)">
+                        <!-- <tr>
+                            <td colspan="7">
+                                搜索
+                            </td>
+                        </tr> -->
+                        <tr>
+                            <th>操作</th>
+                            <th>基因</th>
+                            <th>染色体位置</th>
+                            <th>基因突变信息</th>
+                            <th>合子类型</th>
+                            <th>疾病名称</th>
+                            <th>遗传模式</th>
+                        </tr>
+                        <tr ms-for="($variantItemIndex,data) in variants.variant">
+                            <td>
+                                <input type="checkbox"  ms-attr="{id: $tableIndex + '-' + $variantIndex + '-' + $variantItemIndex}"/>
+                                <label ms-on-click="@operationItem(data, $tableIndex + '-' + $variantIndex + '-' + $variantItemIndex)" class="snv-lable" ms-attr="{for: $tableIndex + '-' + $variantIndex + '-' + $variantItemIndex}" class="report-checkbox"></label>
+                            </td>
+                            <td>
+                                {{data.gene}}
+                            </td>
+                            <td>
+                                {{data.chromosomalLocation}}
+                            </td>
+                            <td>
+                                {{data.mutationInfo}}
+                            </td>
+                            <td>
+                                {{data.zygoteType}}
+                            </td>
+                            <td>
+                                {{data.diseaseName}}
+                            </td>
+                            <td>
+                                {{data.geneticModel}}
+                            </td>
+                        </tr>
+                    </table>
                 </div>
 
-                <!-- snv table -->
-                <table class="snv-table">
-                    <tr>
-                        <th>操作</th>
-                        <th>基因</th>
-                        <th>染色体位置</th>
-                        <th>基因突变信息</th>
-                        <th>合子类型</th>
-                        <th>疾病名称</th>
-                        <th>遗传模式</th>
-                    </tr>
-                    <tr ms-for="($index,data) in @report.reportInfo.analysisResult.snv">
-                        <td>
-                            <input type="checkbox"  ms-attr="{id: $index}"/>
-                            <label ms-on-click="@operationItem(data, $index)" class="snv-lable" ms-attr="{for: $index}" class="report-checkbox"></label>
-                        </td>
-                        <td>
-                            {{data.gene}}
-                        </td>
-                        <td>
-                            {{data.chromosomalLocation}}
-                        </td>
-                        <td>
-                            {{data.mutationInfo}}
-                        </td>
-                        <td>
-                            {{data.zygoteType}}
-                        </td>
-                        <td>
-                            {{data.diseaseName}}
-                        </td>
-                        <td>
-                            {{data.geneticModel}}
-                        </td>
-                    </tr>
-                </table>
+
 
                 <div>◆{{@report.reportInfo.analysisResult.othercomment}}</div>
             </td>
@@ -342,7 +362,7 @@
 <footer class="page-footer indigo">
     <div class="footer-copyright indigo">
         <div class="container center">
-            © Copyright 2016 Euler genomics
+            Copyright © 2010-2016 优乐复生 版权所有 京ICP备 15052141号-1
         </div>
     </div>
 </footer>
