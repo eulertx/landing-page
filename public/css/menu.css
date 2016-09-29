@@ -2,15 +2,15 @@
     z-index: 999;
 }
 
-.menu-panel{
+.menu-panel {
     overflow: hidden;
 }
 
-#pc_index >a {
+#pc_index>a {
     padding: 11px 20px 5px;
 }
 
-.navbar-fixed.sticky #pc_index >a {
+.navbar-fixed.sticky #pc_index>a {
     padding: 6px 20px 4px;
 }
 
@@ -19,15 +19,15 @@
     margin: 0 10px;
 }
 
-.menu-panel .menu-main >a {
+.menu-panel .menu-main>a {
     padding: 11px 8px 5px;
 }
 
 .navbar-fixed.sticky .menu-panel .menu-main a {
-    padding: 6px 14px 4px;
+    padding: 6px 8px 4px;
 }
 
-.menu-panel .active >a{
+.menu-panel .active>a {
     border-bottom: 2px #ff4081 solid;
 }
 
@@ -36,9 +36,10 @@
     background-color: #fff;
     position: absolute;
     top: 1.5em;
+    z-index: 999;
 }
 
-.actived >a {
+.actived>a {
     border-bottom: 2px #ff4081 solid;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.1);
@@ -48,7 +49,13 @@
     display: none;
     position: absolute;
     background-color: #fff;
-    z-index: 999
+    z-index: 999;
+    border-left: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.menu-target li {
+    float: none;
+    white-space: nowrap;
 }
 
 .menu-submenu a {
@@ -75,6 +82,7 @@
     border: none;
     color: #2196f3;
     box-sizing: initial;
+    white-space: nowrap;
 }
 
 .menu-target a:hover {
@@ -85,7 +93,7 @@
     border: none;
 }
 
-.menu-main:hover .menu-submenu{
+.menu-main:hover .menu-submenu {
     display: block;
 }
 
@@ -97,7 +105,7 @@
     float: none;
 }
 
-@media only screen and (min-width: 1190px){
+@media only screen and (min-width: 1320px) {
     #mobile-nav {
         display: none;
     }
@@ -106,12 +114,13 @@
     }
 }
 
-@media (max-width: 1400px) and (min-width: 1200px) {
+@media (max-width: 1450px) and (min-width: 1200px) {
     #menu-panel a {
         padding-right: 4px !important;
         padding-left: 4px !important;
     }
 }
+
 
 /*@media only screen and (min-width: 1190px) {
     .container {
@@ -123,18 +132,20 @@
 /* servce mobile*/
 
 #mobile-nav-menu {
-    top: 9px;
+    top: 12px;
 }
 
-@media only screen and (max-width: 1190px){
+@media only screen and (max-width: 1320px) {
     #menu-panel {
         display: none;
     }
-
     .nav-wrapper-menu .brand-logo {
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
+    }
+    .nav-wrapper-menu a.button-collapse {
+        display: block;
     }
 }
 
@@ -144,23 +155,23 @@
     }
 }
 
-
 @media (max-width: 767px) and (min-width: 320px) {
     #mobile-nav .mobile-submenu {
         height: auto !important;
     }
-
     #mobile-nav .mobile-menu-content li:first-child {
         margin-top: 5px;
     }
 }
 
-.mobile-submenu {
-
-}
-
 .mobile-menu-target {
     padding: 0 15px !important;
+}
+
+.mobile-menu-target a {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .mobile-menu-content {
