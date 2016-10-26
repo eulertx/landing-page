@@ -1,11 +1,12 @@
-$(window).load(function(){
+$(window).load(function() {
 
     // 选中的栏目样式（针对1级目录）
     var menus = {
         index: ['index'],
         about: ['about'],
         contact: ['contact'],
-        technology_service: ['service-exome-sequencing','service-target-capture-sequencing','service-data-analysis-sequencing'],
+        cases: ['case-nervous-item','case-immune-item','case-cardiovascular-item','case-metabolic-item','case-multisystem-item'],
+        technology_service: ['service-exome-sequencing', 'service-target-capture-sequencing', 'service-data-analysis-sequencing', 'service-whole-genome-sequencing'],
         disease_diagnosing: ['diagnosing'],
         disease_screening: ['screening'],
         outreach: ['invite']
@@ -31,8 +32,8 @@ $(window).load(function(){
 
     // 判断当前是否为手机访问
     var u = navigator.userAgent;
-    var isAndroid =  u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //android终端或者uc浏览器
-    var isIPhone =  u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1; //是否为iPhone或者QQHD浏览器
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //android终端或者uc浏览器
+    var isIPhone = u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1; //是否为iPhone或者QQHD浏览器
     var isMobile = isAndroid || isIPhone;
 
 
@@ -71,7 +72,7 @@ $(window).load(function(){
 
                 var $left = $(menuSubmenu).width();
 
-                $(menuTarget).css("left", $left + 2);
+                $(menuTarget).css("left", $left);
 
                 $(menuTarget).css("top", target.offsetTop);
 
@@ -87,7 +88,7 @@ $(window).load(function(){
     // mobile 已计算过点击的菜单
     var mobileCalculated = {};
 
-    $('#mobile-nav').on('click', function(event){
+    $('#mobile-nav').on('click', function(event) {
         var target = event.target || event.srcElement,
             $target = $(target);
 

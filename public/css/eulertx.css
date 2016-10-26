@@ -1,22 +1,29 @@
-
 /*!
  * eulertx.css
  * Version - 0.0.1
  * Copyright (c) 2016-08-31
  */
 
+
+.menu-icon {
+    background: url('../img/menu.png') no-repeat;
+    background-size: 36px;
+    height: 36px !important;
+    width: 36px;
+}
+
 /*
  * blog
  */
 
- .blog-panel {
-     font-family: "Segoe UI","Microsoft YaHei",tahoma,"Hiragino Sans GB","\5b8b\4f53",sans-serif;
- }
+.blog-panel {
+    font-family: "Segoe UI", "Microsoft YaHei", tahoma, "Hiragino Sans GB", "\5b8b\4f53", sans-serif;
+}
 
-.blog-panel p{
+.blog-panel p {
     text-indent: 2em;
     font-size: 16px;
-    font-family: "Segoe UI","Microsoft YaHei",tahoma,"Hiragino Sans GB","\5b8b\4f53",sans-serif;
+    font-family: "Segoe UI", "Microsoft YaHei", tahoma, "Hiragino Sans GB", "\5b8b\4f53", sans-serif;
 }
 
 .blog-panel img {
@@ -43,7 +50,7 @@
     display: block;
     color: #5c5c5c;
     font-size: 16px;
-    font-family: "Segoe UI","Microsoft YaHei",tahoma,"Hiragino Sans GB","\5b8b\4f53",sans-serif;
+    font-family: "Segoe UI", "Microsoft YaHei", tahoma, "Hiragino Sans GB", "\5b8b\4f53", sans-serif;
     margin-bottom: 5px;
     margin-top: 0px;
     font-weight: 400;
@@ -53,7 +60,7 @@
     font-weight: bold;
     display: block;
     font-size: 5px;
-    font-family: "Segoe UI","Microsoft YaHei",tahoma,"Hiragino Sans GB","\5b8b\4f53",sans-serif;
+    font-family: "Segoe UI", "Microsoft YaHei", tahoma, "Hiragino Sans GB", "\5b8b\4f53", sans-serif;
     margin-bottom: 10px;
     margin-top: 0px;
 }
@@ -64,11 +71,13 @@
     background-color: #24252f;
 }
 
+
 /*
  * service
  */
+
 .service-content {
-    font-family: "Segoe UI","Microsoft YaHei",tahoma,"Hiragino Sans GB","\5b8b\4f53",sans-serif;
+    font-family: "Segoe UI", "Microsoft YaHei", tahoma, "Hiragino Sans GB", "\5b8b\4f53", sans-serif;
 }
 
 .service-title {
@@ -78,7 +87,7 @@
 }
 
 .item-content {
-    font-family: "Segoe UI","Microsoft YaHei",tahoma,"Hiragino Sans GB","\5b8b\4f53",sans-serif;
+    font-family: "Segoe UI", "Microsoft YaHei", tahoma, "Hiragino Sans GB", "\5b8b\4f53", sans-serif;
     text-align: left;
     text-indent: 2em;
     padding: 1rem;
@@ -144,84 +153,76 @@
     overflow: hidden;
 }
 
- .question-descript {
-     font-family: 'Roboto', sans-serif;
-     color: #2196F3;
-     font-size: 16px;
- }
+.question-descript {
+    font-family: 'Roboto', sans-serif;
+    color: #2196F3;
+    font-size: 16px;
+}
 
- .answer-content {
-     color: #5c5c5c !important;
-     font-size: 16px !important;
- }
+.answer-content {
+    color: #5c5c5c !important;
+    font-size: 16px !important;
+}
 
- .answer-content strong {
-     font-weight: bold;
- }
+.answer-content strong {
+    font-weight: bold;
+}
 
- .answer-title {
-     float: left;
-     font-size: 20px;
-     line-height: 1em;
-     color: #5c5c5c;
- }
+.answer-title {
+    float: left;
+    font-size: 20px;
+    line-height: 1em;
+    color: #5c5c5c;
+}
 
 
+/* service mobile*/
 
- /* service mobile*/
- @media only screen and (max-width: 601px){
-     .service-title-size {
-         font-size: 18px;
-     }
-
-     .service-img {
+@media only screen and (max-width: 601px) {
+    .service-title-size {
+        font-size: 18px;
+    }
+    .service-img {
         width: 100%;
         height: 100%;
-     }
+    }
+    .row-item .item-name {
+        margin: 0;
+        font-size: 14px;
+    }
+    .item-example {
+        font-size: 14px !important;
+    }
+}
 
-     .row-item .item-name{
-         margin: 0;
-         font-size: 14px;
-     }
 
-     .item-example {
-         font-size: 14px !important;
-     }
- }
+/* service pc*/
 
- /* service pc*/
-@media only screen and (min-width: 601px){
-
+@media only screen and (min-width: 601px) {
     .service-title-size {
         font-size: 34px;
     }
-
     .service-title-center {
         font-size: 24px;
         text-align: center;
     }
-
     p.col.content {
         width: 100% !important;
         text-indent: 2em;
         font-size: 14px;
     }
-
-    .row-item .item-name{
+    .row-item .item-name {
         font-size: 18px;
     }
-
     .row-item {
         width: 48%;
         float: left;
         text-align: center;
         margin-bottom: 10px;
     }
-
     .answer-content {
         float: left;
     }
-
     .content-0, .content-1, .content-2, .content-3 {
         height: 8rem;
         display: -webkit-box;
@@ -231,6 +232,7 @@
         padding: 1rem;
     }
 }
+
 
 /*
  * about our
@@ -254,12 +256,12 @@
 }
 
 .abuout-container {
-    font-family: "Segoe UI","Microsoft YaHei",tahoma,"Hiragino Sans GB","\5b8b\4f53",sans-serif;
+    font-family: "Segoe UI", "Microsoft YaHei", tahoma, "Hiragino Sans GB", "\5b8b\4f53", sans-serif;
 }
 
 .abuout-container p {
     font-size: 16px;
-    font-family: "Segoe UI","Microsoft YaHei",tahoma,"Hiragino Sans GB","\5b8b\4f53",sans-serif;
+    font-family: "Segoe UI", "Microsoft YaHei", tahoma, "Hiragino Sans GB", "\5b8b\4f53", sans-serif;
 }
 
 .about-company {
@@ -269,6 +271,7 @@
 .abuout-container .company-intro {
     margin-bottom: 0;
 }
+
 
 /*.our-advantages {
     margin-top: 20rem;
@@ -328,7 +331,7 @@
     overflow: hidden;
 }
 
-.experience{
+.experience {
     text-align: center;
     overflow: hidden;
 }
@@ -338,7 +341,7 @@
     text-align: center;
 }
 
-.experience-content img{
+.experience-content img {
     width: 60%;
     margin-bottom: 2rem;
 }
@@ -360,7 +363,7 @@
     padding: 2rem;
 }
 
-.advantages-content img{
+.advantages-content img {
     background-color: #fff;
 }
 
@@ -374,48 +377,42 @@
     overflow: hidden;
 }
 
-/* service mobile*/
-@media only screen and (max-width: 601px){
 
-    .item-left  {
+/* service mobile*/
+
+@media only screen and (max-width: 601px) {
+    .item-left {
         width: 100%;
     }
     .item-right {
         width: 100%;
     }
-
     .advantages-item-0, .advantages-item-1, .advantages-item-2, .advantages-item-3 {
         width: 100%;
     }
-
     .advantages-up {
         margin-bottom: 0;
     }
-
     .item-content {
         width: 100%;
         padding: 0;
     }
-
     .experience-item {
         padding: 0;
     }
-
-    .experience-content img{
+    .experience-content img {
         width: 100%;
     }
-
     .construction-content {
         margin: 15rem 0 30rem !important;
     }
-
     .construction-img {
         width: 100%;
     }
 }
 
 .construction-content {
-    margin:27rem 0;
+    margin: 27rem 0;
 }
 
 .construction-descript {
@@ -430,18 +427,18 @@
     margin-bottom: 2rem;
 }
 
+
 /*科技服务*/
+
 .service-sequencing {
     padding: 30px 0 10px 0;
 }
-
 
 .service-sequencing ul li {
     line-height: 2em;
 }
 
-
-.service-sequencing h5{
+.service-sequencing h5 {
     line-height: 190%;
     margin: 20px -2rem;
     padding-left: 2rem;
@@ -472,7 +469,7 @@
     padding: 0 2rem;
 }
 
-.service-content >ul,.service-content >p{
+.service-content>ul, .service-content>p {
     margin-left: 5px;
 }
 
@@ -480,6 +477,267 @@
     margin-right: 10px;
 }
 
+.mtd {
+    margin-top: 20px;
+}
+
+.mbd {
+    margin-bottom: 20px;
+}
+
+.service-content .whole-content-p {
+    margin: 20px 0 0;
+    text-indent: 0;
+    font-size: 18px;
+}
+
 .sub-ul {
     padding-left: 2rem;
+}
+
+.service-content table {
+    border: 1px solid #afafaf;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.service-content tr {
+    border-bottom: 1px solid #afafaf;
+}
+
+.service-content td {
+    padding: 8px 5px;
+    min-width: 110px;
+}
+
+.service-content td, .service-content th {
+    border-left: 1px solid #afafaf;
+    text-align: center;
+}
+
+.service-content th {
+    background-color: #ebebf9;
+}
+
+
+/*contact us*/
+
+.contact-info .contact-info-address {
+    font-size: 20px;
+    color: #000;
+}
+
+
+/* case 案例*/
+
+.case-content p {
+    font-size: 18px;
+    line-height: 2em;
+}
+
+.case-content img {
+    display: block;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.case-header {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.case-content h5 {
+    font-size: 22px;
+    line-height: 2em;
+    color: #2e73ab;
+}
+
+.case-header img {
+    margin: 10px auto;
+}
+
+.case-header p {
+    padding-left: 5px;
+}
+
+.case-header p:first-child {
+    margin-top: 10px;
+}
+
+.case-header strong {
+    font-weight: bold;
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+    .case-header img {
+        width: 100%;
+    }
+}
+
+.page-case {
+    min-height: 760px;
+}
+
+.case-items .case-item{
+    border: 1px solid rgba(0,0,0,0.05);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.case-item-content {
+    overflow: hidden;
+    position: relative;
+}
+
+.item-content-img {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translate3d(0,-50%,0);
+}
+
+.item-content-img img {
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 5px;
+}
+
+.item-content-info {
+    /*padding-left: 90px;*/
+}
+
+.item-content-info h5 {
+    line-height: 1.5em;
+}
+
+.item-content-info p {
+    margin-left: 1px;
+    margin-bottom: 0;
+}
+
+
+.case-title {
+    position: relative;
+}
+
+.case-text {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.case-title img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.nervous-symptoms-title {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.case-content {
+    padding-bottom: 20px;
+}
+
+.autism-content {
+    margin: 0 auto;
+}
+
+.autism-content tr td:first-child {
+    min-width: 162px;
+    text-align: center;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+.autism-content td {
+    border-radius: 2px;
+    border-left: 5px #fff solid;
+    border-right: 5px #fff solid;
+    border-bottom: 5px #fff solid;
+    color: #3a3838;
+    font-size: 13px;
+}
+
+.autism-content .te-bg1 td {
+    background-color: #f2f8fd;
+}
+
+.autism-content .te-bg2 td {
+    background-color: #f8fdf9;
+}
+
+.case-content img{
+    margin: 20px auto;
+    border: none;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 760px) {
+
+    .row .col.offset-s3 {
+        margin-left: 5%;
+    }
+
+    .row .col.s6 {
+        width: 90%;
+    }
+
+    .row .col.s6 p {
+        text-indent: 2em;
+    }
+
+    .row .col.offset-s2 {
+        margin-left: 5%;
+    }
+
+    .row .col.s8 {
+        width: 90%;
+    }
+
+    h4.center.grey-text.text-lighten-2 {
+        font-size: 26px;
+    }
+
+    .item-content-img {
+        float: none;
+        position: static;
+    }
+
+    .item-content-img img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .item-content-info {
+        padding: 0;
+        text-align: center;
+    }
+
+    .service-content table {
+        max-width: 100% !important;
+        font-size: 12px;
+    }
+
+    .service-content td {
+        min-width: 0;
+    }
+
+    .autism-content tr td:first-child {
+        min-width: 0;
+    }
+
+    .case-text {
+        bottom: 5px;
+    }
+
+    .service-sequencing h5 {
+        font-size: 16px;
+        line-height: 1.5em;
+    }
 }
